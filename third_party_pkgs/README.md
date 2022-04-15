@@ -1,8 +1,5 @@
 ## third_party_pkgs
-This directory is used store third party packages that used in HISyn.
-
-In V1.0, only StanfordCoreNLP[] are used. The package is too large to upload to github. Please follow the download
-instructions to make HISyn work properly. 
+This directory is used store third party packages that used in INPOWS.
 
 ### Package instructions
 
@@ -25,4 +22,4 @@ instructions to make HISyn work properly.
    
         sh start_nlp_server.sh
 
-   This command will start a StanfordNLP sever at port 9000. The front end of HISyn will pass the text to the server through nlp clinet and get the NLP results.
+   This command will start a StanfordNLP sever at port 9000. The front end of INPOWS will pass the text to the server through nlp clinet and get the NLP results.
