@@ -1,0 +1,80 @@
+,,,,,
+,,,Data Manipulation Queries,,
+,No,Query,Result,Accuracy w/o interaction,Accuracy w/ interaction
+,1,Get the multiplication results of columns X and Y from dataset Z.,Get the multiplication results of columns X and Y from dataset Z.,1,1
+,2,"For input dataset1.csv, select columns representing performance metrics named “GPU cycles” and “memory utilization rates” about kernel named “function 1”, store the results into dataset1-filtered.csv","[(""For input dataset1.csv , select columns representing performance metrics <hpc:name `` <schema:domainIncludes hpc:Gpu> cycles ''> and `` <schema:domainIncludes hpc:Memory> utilization rates '' about kernel <hpc:name `` function 1 ''> , store results into dataset1-filtered ."", None), (""For input dataset1.csv , select columns representing performance metrics <hpc:name `` <schema:domainIncludes hpc:Gpu> cycles ''> and `` <schema:domainIncludes hpc:wgSize> utilization rates '' about kernel <hpc:name `` function 1 ''> , store results into dataset1-filtered ."", None), (""For input dataset1.csv , select columns representing performance metrics <hpc:name `` <schema:domainIncludes hpc:Gpu> cycles ''> and `` <schema:domainIncludes hpc:localMem> utilization rates '' about kernel <hpc:name `` function 1 ''> , store results into dataset1-filtered ."", None)]",0,1
+,3,"Select  benchmark_name, gpu_type, execution_time from any dataset where:“Hardware” contains “GPU” “Software” contains “Benchmark”","[(""Select : benchmark _ <hpc:name> , <schema:domainIncludes hpc:Gpu> _ <hpc:modelType> , execution _ time from dataset where : `` Hardware '' contains `` <schema:domainIncludes hpc:Gpu> '' `` Software '' contains `` Benchmark ''"", None), (""Select : benchmark _ <hpc:name> , <schema:domainIncludes hpc:Gpu> _ <hpc:learningType> , execution _ time from dataset where : `` Hardware '' contains `` <schema:domainIncludes hpc:Gpu> '' `` Software '' contains `` Benchmark ''"", None)]",0,1
+,4,return all the column names of this dataset.,return all column <hpc:name> of dataset .,0,1
+,5,Get the dataset X from dataset Y without column ‘Memory Frequency’.,"Get dataset X from dataset Y without column ""<schema:domainIncludes hpc:Memory> <schema:domainIncludes hpc:cpuFrequency>"" .",0,1
+,6,"Select X1,X2 from dataset A and Y1, Y2 from dataset B then merge them into dataset C","Select X1 , X2 from dataset A and Y1 , Y2 from dataset B then merge into them into dataset C",1,1
+,7,Get the normalized results for column X from dataset A.,"Get <hpc:modelType normalized results for column X from dataset A>
+Get <hpc:modelFormat normalized results for column X from dataset A>",0,1
+,8,Get the encoding results for column X from dataset A.,Get encoding results for column X from dataset A,1,1
+,9,Convert data file X to CSV format type.,Convert data file X to CSV <hpc:modelFormat <hpc:modelType>,0,1
+,10,Convert data file Y to JSON format type.,Convert data file Y to JSON <hpc:modelFormat <hpc:modelType>,0,1
+,11,"Get the merging results of columns X,Y,Z from dataset W.","Get merging results of columns X , Y , Z from dataset W",1,1
+,12,Get count of column X from dataset A Group By ‘Model’.,Get count of column X from dataset A Group By Model,1,1
+,13,Get count of column X from dataset A Group By ‘Model’ and ‘Bench Number’.,"Get count of column X from dataset A Group By ""Model"" and Bench <hpc:version>
+Get count of column X from dataset A Group By ""Model"" and Bench <hpc:license>",0,1
+,14,merge dataset X with dataset Y,merge dataset X with dataset Y,1,1
+,15,get encoding result for column X from file A with type one hot encoding,get encoding result for column X with from file A with from <hpc:modelType> one hot encoding,0,1
+,16,Get all columns from dataset Y without column ‘Memory Frequency’.,"et columns from dataset Y without column ""<schema:domainIncludes hpc:Memory> <schema:domainIncludes hpc:cpuFrequency>""
+Get columns from dataset Y without column ""<schema:domainIncludes hpc:Memory> <schema:domainIncludes hpc:coprocessorSpeed>""
+Get columns from dataset Y without column ""<schema:domainIncludes hpc:wgSize> <schema:domainIncludes hpc:cpuFrequency>""",0,1
+,17,Get all columns from dataset Y,Get columns from dataset Y,1,1
+,,,,,
+,,,Ontology Related cases: Simple,,
+,No,Query,Result,Accuracy w/o interaction,Accuracy w/ interaction
+,1,get AI model that has model type  'prediction',"get AI model that has model <hpc:modelType> ""prediction""",1,1
+,2,get AI model having model type 'prediction' and target machine named 'lassen',"get AI model having model <hpc:modelType> ""prediction"" and <hpc:targetMachine <hpc:targetMachine <hpc:name ""lassen"">>>",1,1
+,3,get AI model having model type 'classification',"get AI model having model <hpc:modelType> ""classification""",1,1
+,4,get ai model with model format 'python',"get ai model with model <hpc:modelFormat> ""python""",1,1
+,5,list of  AI models with format 'python notebook',"list of AI models with <hpc:modelFormat> ""python notebook""",1,1
+,6,get AI model with version '1.2.1' and learning type 'Supervised',"get AI model with <hpc:version""> 1.2.1"" and <hpc:learningType <hpc:modelType ""Supervised"">>",0,1
+,7,"get AI model having learning type ""Supervised"" and subject ""gradient decent""","get AI model having <hpc:learningType <hpc:modelType ""Supervised"">> and subject ""gradient decent""",0,0
+,8,Get dataset with subject 'GPGPU',"Get dataset with <hpc:subject ""GPGPU"">",1,1
+,9,get dataset having subject 'Heterogeneous System',"get dataset having <hpc:subject ""Heterogeneous System"">",1,1
+,10,return dataset whose license is 'GPL-3.0',"return dataset whose <hpc:license> is ""GPL-3.0""",0,1
+,11,get dataset with version 0.2.0 and subject 'LLVM',"get dataset whose <hpc:version> is"" 0.2.0"" and <hpc:subject ""LLVM"">",0,1
+,12,get dataset with name 'dataflow_logs_20.06.01.tar.bz2',"get dataset with <hpc:name ""dataflow_logs_20.06.01.tar.bz2"">",1,1
+,13,get project which is funded by 'Lawrence Livermore National Laboratory'',"get project <hpc:fundedBy by ""Lawrence Livermore National Laboratory"">",1,1
+,14,get project in program area 'OpenMP',"get project in <hpc:programArea ""OpenMP"">",1,1
+,15,get project that is funded by 'ICT' in the program area of 'parallel computing',"get project that is <hpc:fundedBy by ""ICT""> and having <hpc:programArea of ""parallel computing"">",1,1
+,16,get person who is a member of 'Center for Applied Scientific Computing'',"get person who is <hpc:memberOf> of ""Center for Applied Scientific Computing""",1,1
+,17,"person having affiliation with 'Lawrence Livermore National Laboratory, CA'","get person having <hpc:affiliation ""Lawrence Livermore National Laboratory> , CA""",1,1
+,18,get a list of people contributing to a project named 'GPU kernal' ,"get list of people contributed to project <hpc:name ""<schema:domainIncludes hpc:Gpu> kernal"">",0,0
+,19,get files having contributor with name 'Lee',"get files having <hpc:contributor with <hpc:name ""Lee"">>",1,1
+,20,files which are created by 'Lee',"files which are created by ""Lee""",0,1
+,21,get datasets which were contributed by a person named 'Lee',"get datasets which were contributed by person <hpc:name ""Lee"">",0,0
+,22,get software having version '16.2'  and is used by project named 'X',"get software having <hpc:version>"" 16.2"" and is <hpc:usedBy by project <hpc:name ""X"">>",1,1
+,23,hardware which was used during experiment named 'OPUM',"hardware which was used during <hpc:experiment> <hpc:name ""OPUM"">",0,1
+,24,hardware that was used by experiment named 'OPUM',"hardware that was <hpc:usedBy by <hpc:experiment> <hpc:name ""OPUM"">>",1,1
+,25,person having job title of 'Senior Computer Scientist' and whose gender is 'male',"get person having <hpc:jobTitle title> of ""Senior Computer Scientist"" and gender ""male""",1,1
+,,,,,
+,,,Ontology Related cases : Complex,,
+,No,Query,Result,Accuracy w/o interaction,Accuracy w/ interaction
+,1,get all columns from dataset named 'X',"get columns from dataset <hpc:name ""X"">",1,1
+,2,Get memory related data from file 'cgo-nvidia.csv'.,"Get <schema:domainIncludes hpc:Memory> related data from file ""cgo-nvidia .",1,1
+,3,get cpu related columns from dataset named 'X',"get <schema:domainIncludes hpc:Cpu> related columns from dataset <hpc:name ""X"">",1,1
+,4,"get normalization results of columns 'X,Y' from file with name 'Z'","get normalization results of columns ""X , Y"" from file with <hpc:name ""Z"">",1,1
+,5,get all files having contributors with name 'Lee',"get files having <hpc:contributor with <hpc:name ""Lee"">>",1,1
+,6,get dataset generated by experiment named 'Optimal Unified Memory - Online Inference',"get dataset <hpc:generatedBy by <hpc:experiment> <hpc:name ""Optimal Unified <schema:domainIncludes hpc:Memory> - Online Inference"">",0,1
+,7,get software having version '16.2'  and is used by project named 'X',"get software having <hpc:version>"" 16.2"" and is <hpc:usedBy by project <hpc:name ""X"">>",1,1
+,8,get hardware used by experiment named 'OPUM',"get hardware <hpc:usedBy by <hpc:experiment> <hpc:name ""OPUM"">>",1,1
+,9,merge dataset 'X' and dataset having license 'Apache',"merge dataset ""X"" and dataset having <hpc:license ""Apache"">",1,1
+,10,convert file with contributor having name 'Caleb' to JSON,"convert file with <hpc:contributor having <hpc:name ""Caleb""> to JSON>",1,1
+,11,list of  AI models with format 'python notebook',"list of AI models with <hpc:modelFormat> ""python notebook""",1,1
+,12,return all data columns from file 'X' except 'P',"return data columns from file ""X"" except ""P""",1,1
+,13,give data dealing with cpu freqency from file 'Y',"give data dealing from with <schema:domainIncludes hpc:Cpu> freqency from with file ""Y""",1,1
+,14,extract data linked to cpu from file 'X' ,"extract data linked to cpu from file ""X""",0,1
+,15,"get normalize the columns 'X,Y' from file named 'Z'","get normalize columns ""X , Y"" from file <hpc:name ""Z"">",1,1
+,16,merge dataset 'X' with another dataset having license 'Apache',"merge dataset ""X"" with dataset having <hpc:license ""Apache"">",1,1
+,17,merge dataset 'X' with another dataset license 'Apache',"merge dataset ""X"" with dataset <hpc:license ""Apache"">",1,1
+,18,convert file having contributor named 'caleb' to json format,"convert file having <hpc:contributor <hpc:name ""caleb"" to json <hpc:modelFormat>>>",0,1
+,,,,,
+,,,,0.7441860465,0.9302325581
+,,,,,
+,,,,,
+,,,Section,W/o interaction,W/ interaction
+,,,Ontology Related queries only,74.42%,93.02%
+,,,Full Test case,65.00%,95.00%
