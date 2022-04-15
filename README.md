@@ -30,7 +30,7 @@ The main-new.py is the entry point for running INPOWS. After finishing setting u
 
 #### How INPOWS work?:
 
-The set of natural language queries are sourced through a txt file. Then, they are passed through the DSL/ontology query split module of INPOWS. The user-selected DSL query is then given to HISyn. We use HPC ontology to store domain knowledge and meta data. Before HISyn processes the query, meta data is provided to the document generator to create a DSL grammar and API doc. Hereafter, HISyn performs dependency graph-based code synthesis and generates a workflow expression. While generating the workflow expression, if an ontology node is present in the dependency tree, the Ontology module is called to replace that node with the information retrieved via a sparql query. HISyn then generates the workflow code expression which is executable by the user. 
+A set of natural language queries needs to be selected by user from the CLI prompt. Then, they are passed through the DSL/ontology query split module of INPOWS. The user-selected DSL query is then given to HISyn. We use HPC ontology to store domain knowledge and meta data. Before HISyn processes the query, meta data is provided to the document generator to create a DSL grammar and API doc. Hereafter, HISyn performs dependency graph-based code synthesis and generates a workflow expression. While generating the workflow expression, if an ontology node is present in the dependency tree, the Ontology module is called to replace that node with the information retrieved via a sparql query. HISyn then generates the workflow code expression which is executable by the user. 
 
 #### Details of the experiment:
 
