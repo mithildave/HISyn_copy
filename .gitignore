@@ -1,4 +1,4 @@
-third_party_pkgs/stanford-corenlp-full-2018-10-05/
+venv/
 .ipynb_checkpoints/
 corenlp_server*
 .DS_Store
