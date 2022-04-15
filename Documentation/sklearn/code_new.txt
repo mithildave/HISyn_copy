@@ -1,0 +1,1 @@
+LinearRegression().set_params(normalize=True)

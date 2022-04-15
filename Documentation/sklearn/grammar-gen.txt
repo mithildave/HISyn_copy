@@ -1,0 +1,48 @@
+_root	:=	_linear_regression
+	|	_ridge_regression
+
+_linear_regression	:=	LinearRegression(_fit_intercept,_normalize,_copy_X,_n_jobs,_positive)._lr_methods
+
+_fit_intercept	:=	empty
+				|	fit_intercept_key_(_bool)
+				|	fit_intercept_cO_pY_key_(_bool)
+
+_normalize	:=	empty
+			|	normalize_key_(_bool)
+
+_copy_X	:=	empty
+			|	copy_X_key_(_bool)
+
+_n_jobs	:=	empty
+			|	n_jobs_key_(_python_int)
+
+_positive	:=	empty
+			|	positive_key_(_bool)
+
+_lr_methods	:=	empty
+			|	fit(_X,_y,_sample_weight)._fitted_lr_methods
+			|	predict(_X)
+			|	get_params()
+			|	set_params(_fit_intercept,_normalize,_copy_X,_n_jobs,_positive)
+
+_bool	:=	True()
+		|	False()
+
+_X	:=	X_key_(_array)
+		|	X_cO_pY_key_(_array)
+
+_y	:=	y_key_(_array)
+
+_array	:=	np.array(_python_list)
+
+_sample_weight	:=	sample_weight_key_(_array)
+
+_fitted_lr_methods	:=	empty
+				|	get_params()
+				|	set_params(_fit_intercept,_normalize,_copy_X,_n_jobs,_positive)
+
+_ridge_regression	:=	Ridge(_fit_intercept,_normalize,_copy_X,_n_jobs,_positive)._rr_methods
+
+_rr_methods	:=	empty
+			|	set_params_cO_pY(_fit_intercept,_normalize,_copy_X,_n_jobs,_positive)
+

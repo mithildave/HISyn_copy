@@ -1,0 +1,100 @@
+copy_X_key_
+input: 
+return: 
+description: duplicate x, make a copy of x
+
+deep_key_
+input:
+return:
+description: return the parameters for this estimator and contained subobjects or submodels that are estimators, 
+
+_False_
+input:
+return:
+description: without, not, aren't, isn't
+
+fit
+input: 
+return: 
+description: fit the data to a model, train the model on the data, train a linear regression
+
+fit_intercept_key_
+input: 
+return: 
+description: fit the intercept if data is not centered
+
+get_params
+input:
+return:
+description: Get parameters for this estimator, get parameters for the model, get parameter for the regression
+
+_int_
+input: python_int
+return:
+description: integer, number
+
+LinearRegression
+input:
+return: 
+description: create a linear regression model, make a least squares model
+
+n_jobs_key_
+input:
+return: 
+description: number of threads, number of jobs, parallel jobs
+
+normalize_key_
+input: 
+return: 
+description: normalize, standardize, normalized data, standardized data, normalization, normalizing, standardization, standardizing
+
+np.array
+input: python_list
+return: 
+description: array, Create an array
+
+positive_key_
+input:
+return:
+description: force the coefficients to be positive
+
+predict
+input:
+return:
+description: Predict using the linear model
+
+sample_weight_key_
+input:
+return:
+description: Individual weights for each sample
+
+score
+input: 
+return:
+description: Return the coefficient of determination of the prediction, score the model, evaluate the model
+
+set_params
+input: 
+return: 
+description: Set the parameters of the estimator, Set the parameters of the model, Set the parameters of the regression
+
+_True_
+input:
+return: 
+description: with, true
+
+var
+input:
+return:
+description: variable, x, y
+
+X_key_
+input: var
+return:
+description: X value of the data, Training data, input for the model
+
+y_key_
+input: var
+return:
+description: target values, y value of the data, output for the model
+

@@ -1,0 +1,175 @@
+if of given matchers matches 
+AST nodes descendant AST nodes provided matcher 
+AST nodes child AST nodes provided matcher 
+AST nodes ancestor provided matcher 
+AST nodes descendant AST nodes provided matcher 
+AST nodes child AST nodes provided matcher 
+AST nodes parent provided matcher 
+condition expression of if statement for loop statement conditional operator 
+false branch expression of conditional operator binary ternary 
+true branch expression of conditional operator 
+node if declaration associated with node given matcher 
+base expression of array subscript expression 
+index expression of array subscript expression 
+left hand side of binary operator expressions 
+right hand side of binary operator expressions 
+arrays C99 complex types specific element type 
+arrays C99 complex types specific element type 
+atomic types with specific value type 
+atomic types with specific value type 
+AutoType nodes deduced type specific type 
+if left hand side right hand side of binary operator matches 
+left hand side of binary operator expressions 
+right hand side of binary operator expressions 
+parameter of function ObjC method declaration block 
+n'th parameter of function ObjC method declaration block 
+Narrows PointerType similar matchers pointee given matcher 
+Narrows PointerType similar matchers pointee given matcher 
+arguments respective ParmVarDecl 
+argument of call expression constructor call expression ObjC-message-send expression 
+n'th argument of call expression constructor call expression 
+node if declaration associated with node given matcher 
+constructor initializer in constructor definition 
+constructor initializer 
+field declaration of constructor initializer 
+initializer expression of constructor initializer 
+member expression object expression matched by given matcher 
+'for 'while while statement function definition given body 
+initialization statement of for loop 
+range initialization statement of for loop 
+
+on implicit object argument of member call expression 
+Overloaded type declaration 
+if expression type specified matcher pointer type InnerMatcher 
+method overridden by given method matcher multiple matches 
+class declaration that given method declaration belongs 
+array new expressions with given array size 
+node if declaration associated with node given matcher 
+first method of class struct that InnerMatcher 
+C++ classes derived from class matching Base 
+Similar classes Base 
+argument of call expression constructor call expression ObjC-message-send expression 
+if call expression callee declaration given matcher 
+if call expression callee expression matches 
+arguments respective ParmVarDecl 
+argument of call expression constructor call expression ObjC-message-send expression 
+n'th argument of call expression constructor call expression 
+node if declaration associated with node given matcher 
+If given case statement GNU case range extension constant given in statement 
+if cast source expression opaque value source expression given matcher 
+classTemplateSpecializations templateSpecializationType functionDecl at least TemplateArgument given InnerMatcher 
+specialized template of specialization declaration 
+classTemplateSpecializations templateSpecializationType functionDecl n'th TemplateArgument given InnerMatcher 
+arrays C99 complex types specific element type 
+arrays C99 complex types specific element type 
+compound statements at least substatement given matcher StmtExprs CompoundStmt as children 
+decayed type type matches InnerMatcher 
+node if declaration associated with node given matcher 
+DeclRefExpr declaration through specific shadow declaration 
+DeclRefExpr declaration specified matcher 
+n'th declaration of declaration statement 
+Decl of DeclStmt single declaration 
+if type location of declarator decl type inner matcher 
+declarations declaration context interpreted as Decl InnerMatcher 
+DecltypeType nodes type 
+'for 'while while statement function definition given body 
+condition expression of if statement for loop statement conditional operator 
+ElaboratedTypes qualifier NestedNameSpecifier InnerMatcher if qualifier 
+ElaboratedTypes named type matches InnerMatcher 
+node if declaration associated with node given matcher 
+casts destination type given matcher 
+Overloaded declaration of expression value declaration type 
+if expression declaration type type matcher 
+expressions InnerMatcher after implicit casts stripped 
+expressions InnerMatcher after implicit AST nodes stripped 
+expressions InnerMatcher after parentheses casts stripped 
+expressions InnerMatcher after implicit casts parentheses stripped 
+non-static data members in-class initializer 
+'for 'while while statement function definition given body 
+condition expression of if statement for loop statement conditional operator 
+increment statement of for loop 
+initialization statement of for loop 
+Overloaded declaration of expression value declaration type 
+if expression declaration type type matcher 
+parameter of function ObjC method declaration block 
+classTemplateSpecializations templateSpecializationType functionDecl at least TemplateArgument given InnerMatcher 
+'for 'while while statement function definition given body 
+n'th parameter of function ObjC method declaration block 
+classTemplateSpecializations templateSpecializationType functionDecl n'th TemplateArgument given InnerMatcher 
+return type of function declaration 
+condition expression of if statement for loop statement conditional operator 
+condition variable statement in if statement 
+else-statement of if statement 
+then-statement of if statement 
+implicit casts destination type given matcher 
+syntactic form of init list expressions if expression 
+node if declaration associated with node given matcher 
+node if declaration associated with node given matcher 
+node if declaration associated with node given matcher 
+member expression object expression matched by given matcher 
+member expression member matched by given matcher 
+Narrows PointerType similar matchers pointee given matcher 
+Narrows PointerType similar matchers pointee given matcher 
+NamedDecl declaration given matcher 
+on prefix of NestedNameSpecifierLoc 
+nested name locs type given TypeLoc 
+on prefix of NestedNameSpecifier 
+nested name specifiers namespace given namespace matcher 
+nested name specifiers type given QualType matcher without qualifiers 
+argument of call expression constructor call expression ObjC-message-send expression 
+n'th argument of call expression constructor call expression 
+if Objective-C message sent instance inner matcher matches on instance 
+on receiver of ObjectiveC Message expression 
+parameter of function ObjC method declaration block 
+n'th parameter of function ObjC method declaration block 
+if cast source expression opaque value source expression given matcher 
+OverloadExpr if of declarations in set of overloads matches given matcher 
+ParenType nodes inner type specific type 
+Narrows PointerType similar matchers pointee given matcher 
+Narrows PointerType similar matchers pointee given matcher 
+QualTypes canonical type matches InnerMatcher 
+node if declaration associated with node given matcher 
+types that match InnerMatcher after parens stripped 
+Overloaded pointee type declaration 
+if matched type pointer type pointee type specified matcher 
+Overloaded referenced type declaration 
+if matched type reference type referenced type specified matcher 
+node if declaration associated with node given matcher 
+Narrows PointerType similar matchers pointee given matcher 
+Narrows PointerType similar matchers pointee given matcher 
+return value expression of return statement 
+compound statements at least substatement given matcher StmtExprs CompoundStmt as children 
+Same as unaryExprOrTypeTraitExpr matching alignof 
+declaration of function statement 
+Same as unaryExprOrTypeTraitExpr matching sizeof 
+template type parameter substitutions replacement type provided matcher 
+case default statement given switch statement matcher multiple matches 
+condition expression of if statement for loop statement conditional operator 
+node if declaration associated with node given matcher 
+sugar TemplateArgument certain expression 
+canonical TemplateArgument certain declaration 
+TemplateArgument integral type 
+TemplateArgument certain template 
+TemplateArgument certain type 
+classTemplateSpecializations templateSpecializationType functionDecl at least TemplateArgument given InnerMatcher 
+node if declaration associated with node given matcher 
+classTemplateSpecializations templateSpecializationType functionDecl n'th TemplateArgument given InnerMatcher 
+node if declaration associated with node given matcher 
+if node descendant matches 
+if expression declaration type type matcher 
+node if declaration associated with node given matcher 
+if matched type unqualified desugared type of matched node 
+unary expressions specific type of argument 
+if operand of unary operator matches 
+member expression object expression matched by given matcher 
+node if declaration associated with node given matcher 
+shadow declaration 
+shadow declaration target declaration matched by given matcher 
+Overloaded declaration of expression value declaration type 
+if expression declaration type type matcher 
+variable declaration initializer expression given matcher 
+VariableArrayType nodes specific size expression 
+'for 'while while statement function definition given body 
+condition expression of if statement for loop statement conditional operator 
+NestedNameSpecifierLocs for given inner NestedNameSpecifier-matcher matches 
+TypeLocs for given inner QualType-matcher matches 

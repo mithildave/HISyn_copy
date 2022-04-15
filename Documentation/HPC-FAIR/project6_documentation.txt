@@ -1,0 +1,124 @@
+name: InitialSetup
+type:
+return:
+argument:
+method:
+prereq:
+Description: Import libraries
+
+name: LoadDataframe
+type:
+return: df
+argument: sgemm_product.csv
+method:
+prereq: InitialSetup
+Description: Create Panda Dataframe with Input dataset
+
+name: CheckIfNull
+type:
+return: stdout
+argument: X, Y, sgemm_product.csv
+method:
+prereq: InitialSetup
+Description: Exploratory Data Analysis, check if there are any nulls in our dataset, null value treatment, check the type of our features, visualize the distribution of each feature
+
+name: CheckFeatureType
+type:
+return: stdout
+argument: df
+method:
+prereq: LoadDataframe
+Description: check the type of our features using the function info from pandas
+
+
+name: VisualizeFeatureDistribution
+type:
+return:
+argument: df
+method:
+prereq: LoadDataframe
+Description: visualize the distribution of each feature
+Command:
+
+name: DiscardOutliers
+type:
+return:
+argument: df
+method:
+prereq: LoadDataframe
+Description: discard values which are Outliers
+Command:
+
+
+name: TargetTransformation
+type:
+return:
+argument: df
+method:
+prereq: LoadDataframe
+Description: logarithmic transformation to achieve a normal distribution of our target variable
+
+
+name: Normalization
+type:
+return: X, Y
+argument: df
+method:
+prereq: LoadDataframe
+Description: split our data into features (X) and target (Y), MinMaxScaler rescales the data set such that all feature values are in the range
+Command:
+
+
+name: LearningRate
+type:
+return:
+argument: X, Y
+method:
+prereq: InitialSetup
+Description:  Predict the values of Y using Stochastic Gradient Descent based on values of X. study the affect of the parameter alpha (learning rate)
+
+
+name: FeatureSelection
+type:
+return: X', Y'
+argument: X, Y
+method:
+prereq: InitialSetup
+Description:  Trained our model with  train it with 8 random features
+
+
+name: DecisionTree
+type:
+return: ConfusionMatrix
+argument: X_train, Y_train, Y_test
+method:
+prereq:
+Description:  Classify the database based on decision tree algorithm. Label the training data.
+
+
+
+name: KNN
+type:
+return: ConfusionMatrix
+argument: X_train, Y_train, Y_test
+method:
+prereq: InitialSetup
+Description:  Classify the database based on  Nearest neighbour algorithm. Label the test data.
+
+
+
+name: RandomForest
+type:
+return: ConfusionMatrix
+argument: X_train, Y_train, Y_test
+method:
+prereq: InitialSetup
+Description:  Use Random Forest algortims to classify the dataset. Ensemble method.
+
+name: HyperParamaterTuning
+type:
+return: stdout
+argument: X_train, Y_train
+method:
+prereq: RandomForest
+Description:   Perform an hyperparameter search over Random Forest to know if it can get a better accuracy.

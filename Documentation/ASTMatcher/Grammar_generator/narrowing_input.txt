@@ -1,0 +1,159 @@
+Matcher<*>, ..., Matcher<*>
+Matcher<*>, ..., Matcher<*>
+
+Matcher<*>
+std::string Name
+
+bool Value
+const ValueT  Value
+double Value
+unsigned Value
+
+unsigned N
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+StringRef Name
+
+
+std::string BaseName
+
+
+
+std::string BaseName
+
+unsigned N
+CastKind Kind
+bool Value
+const ValueT  Value
+double Value
+unsigned Value
+unsigned N
+unsigned N
+unsigned N
+unsigned N
+std::string ID
+const Decl* Other
+attr::Kind AttrKind
+std::string RegExp
+
+
+
+
+
+
+unsigned N
+
+unsigned Width
+
+const ValueT  Value
+double Value
+
+StringRef Name
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+unsigned N
+
+
+unsigned N
+
+bool Value
+const ValueT  Value
+double Value
+unsigned Value
+
+
+const std::string  Name
+std::string RegExp
+
+
+unsigned N
+
+
+std::string BaseName
+
+
+std::string RegExp
+unsigned N
+
+
+std::string Name
+std::string ID
+
+
+
+
+
+
+
+
+
+
+
+std::string ID
+const Stmt* Other
+std::string RegExp
+
+
+unsigned N
+
+std::string Value
+
+unsigned N
+std::string RegExp
+
+
+
+std::string ID
+const Type* Other
+
+
+UnaryExprOrTypeTrait Kind
+std::string Name
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+StringRef, ..., StringRef
+StringRef, ..., StringRef
+

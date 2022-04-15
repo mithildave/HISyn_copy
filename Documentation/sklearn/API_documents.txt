@@ -1,0 +1,100 @@
+LinearRegression
+input: _fit_intercept,_normalize,_copy_X,_n_jobs,_positive
+return:
+description: create a linear regression model, make a least squares model
+
+fit_intercept_key_
+input: empty, _bool
+return:
+description: fit the intercept if data is not centered
+
+normalize_key_
+input: empty, _bool
+return:
+description: normalize, standardize, normalized data, standardized data, normalization, normalizing, standardization, standardizing
+
+copy_X_key_
+input: empty, _bool
+return:
+description: duplicate x, make a copy of x
+
+n_jobs_key_
+input: empty, _python_int
+return:
+description: number of threads, number of jobs, parallel jobs
+
+positive_key_
+input: empty, _bool
+return:
+description: force the coefficients to be positive
+
+fit
+input: _X,_y,_sample_weight
+return:
+description: fit the data to a model, train the model on the data, train a linear regression
+
+predict
+input: _X
+return:
+description: fit the data to a model, train the model on the data, train a linear regression
+
+True
+input: 
+return:
+description: with, true
+
+False
+input: 
+return:
+description: without, not, aren't, isn't
+
+X_key_
+input: _array
+return:
+description: X value of the data, Training data
+
+y_key_
+input: _array
+return:
+description: target values
+
+X_cO_pY_key_
+input: _array
+return:
+description: X value of the test data, testing data
+
+np.array
+input: _python_list
+return:
+description: array, Create an array
+
+sample_weight_key_
+input: _array
+return:
+description: Individual weights for each sample
+
+get_params
+input: 
+return:
+description: Individual weights for each sample
+
+set_params
+input: _fit_intercept,_normalize,_copy_X,_n_jobs,_positive
+return:
+description: Individual weights for each sample
+
+Ridge
+input: _fit_intercept,_normalize,_copy_X,_n_jobs,_positive
+return:
+description: create a linear regression model, make a least squares model
+
+fit_intercept_cO_pY_key_
+input: empty, _bool
+return:
+description: fit the intercept if data is not centered in ridge regression
+
+set_params_cO_pY
+input: _fit_intercept,_normalize,_copy_X,_n_jobs,_positive
+return:
+description: Individual weights for each sample
+

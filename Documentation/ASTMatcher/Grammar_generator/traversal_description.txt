@@ -1,0 +1,175 @@
+Matches if any of the given matchers matches.
+Matches AST nodes that have descendant AST nodes that match the provided matcher.
+Matches AST nodes that have child AST nodes that match the provided matcher.
+Matches AST nodes that have an ancestor that matches the provided matcher.
+Matches AST nodes that have descendant AST nodes that match the provided matcher.
+Matches AST nodes that have child AST nodes that match the provided matcher.
+Matches AST nodes that have a parent that matches the provided matcher.
+Matches the condition expression of an if statement, for loop, switch statement or conditional operator.
+Matches the false branch expression of a conditional operator (binary or ternary).
+Matches the true branch expression of a conditional operator.
+Matches a node if the declaration associated with that node matches the given matcher.
+Matches the base expression of an array subscript expression.
+Matches the index expression of an array subscript expression.
+Matches the left hand side of binary operator expressions.
+Matches the right hand side of binary operator expressions.
+Matches arrays and C99 complex types that have a specific element type.
+Matches arrays and C99 complex types that have a specific element type.
+Matches atomic types with a specific value type.
+Matches atomic types with a specific value type.
+Matches AutoType nodes where the deduced type is a specific type.
+Matches if either the left hand side or the right hand side of a binary operator matches.
+Matches the left hand side of binary operator expressions.
+Matches the right hand side of binary operator expressions.
+Matches any parameter of a function or an ObjC method declaration or a block.
+Matches the n'th parameter of a function or an ObjC method declaration or a block.
+Narrows PointerType (and similar) matchers to those where the pointee matches a given matcher.
+Narrows PointerType (and similar) matchers to those where the pointee matches a given matcher.
+Matches all arguments and their respective ParmVarDecl.
+Matches any argument of a call expression or a constructor call expression, or an ObjC-message-send expression.
+Matches the n'th argument of a call expression or a constructor call expression.
+Matches a node if the declaration associated with that node matches the given matcher.
+Matches each constructor initializer in a constructor definition.
+Matches a constructor initializer.
+Matches the field declaration of a constructor initializer.
+Matches the initializer expression of a constructor initializer.
+Matches a member expression where the object expression is matched by a given matcher.
+Matches a 'for', 'while', 'do while' statement or a function definition that has a given body.
+Matches the initialization statement of a for loop.
+Matches the range initialization statement of a for loop.
+
+Matches on the implicit object argument of a member call expression.
+Overloaded to match the type's declaration.
+Matches if the expression's type either matches the specified matcher, or is a pointer to a type that matches the InnerMatcher.
+Matches each method overridden by the given method. This matcher may produce multiple matches.
+Matches the class declaration that the given method declaration belongs to.
+Matches array new expressions with a given array size.
+Matches a node if the declaration associated with that node matches the given matcher.
+Matches the first method of a class or struct that satisfies InnerMatcher.
+Matches C++ classes that are directly or indirectly derived from a class matching Base.
+Similar to isDerivedFrom(), but also matches classes that directly match Base.
+Matches any argument of a call expression or a constructor call expression, or an ObjC-message-send expression.
+Matches if the call expression's callee's declaration matches the given matcher.
+Matches if the call expression's callee expression matches.
+Matches all arguments and their respective ParmVarDecl.
+Matches any argument of a call expression or a constructor call expression, or an ObjC-message-send expression.
+Matches the n'th argument of a call expression or a constructor call expression.
+Matches a node if the declaration associated with that node matches the given matcher.
+If the given case statement does not use the GNU case range extension, matches the constant given in the statement.
+Matches if the cast's source expression or opaque value's source expression matches the given matcher.
+Matches classTemplateSpecializations, templateSpecializationType and functionDecl that have at least one TemplateArgument matching the given InnerMatcher.
+Matches the specialized template of a specialization declaration.
+Matches classTemplateSpecializations, templateSpecializationType and functionDecl where the n'th TemplateArgument matches the given InnerMatcher.
+Matches arrays and C99 complex types that have a specific element type.
+Matches arrays and C99 complex types that have a specific element type.
+Matches compound statements where at least one substatement matches a given matcher. Also matches StmtExprs that have CompoundStmt as children.
+Matches the decayed type, whos decayed type matches InnerMatcher
+Matches a node if the declaration associated with that node matches the given matcher.
+Matches a DeclRefExpr that refers to a declaration through a specific using shadow declaration.
+Matches a DeclRefExpr that refers to a declaration that matches the specified matcher.
+Matches the n'th declaration of a declaration statement.
+Matches the Decl of a DeclStmt which has a single declaration.
+Matches if the type location of the declarator decl's type matches the inner matcher.
+Matches declarations whose declaration context, interpreted as a Decl, matches InnerMatcher.
+Matches DecltypeType nodes to find out the underlying type.
+Matches a 'for', 'while', 'do while' statement or a function definition that has a given body.
+Matches the condition expression of an if statement, for loop, switch statement or conditional operator.
+Matches ElaboratedTypes whose qualifier, a NestedNameSpecifier, matches InnerMatcher if the qualifier exists.
+Matches ElaboratedTypes whose named type matches InnerMatcher.
+Matches a node if the declaration associated with that node matches the given matcher.
+Matches casts whose destination type matches a given matcher.
+Overloaded to match the declaration of the expression's or value declaration's type.
+Matches if the expression's or declaration's type matches a type matcher.
+Matches expressions that match InnerMatcher after any implicit casts are stripped off.
+Matches expressions that match InnerMatcher after any implicit AST nodes are stripped off.
+Matches expressions that match InnerMatcher after parentheses and casts are stripped off.
+Matches expressions that match InnerMatcher after implicit casts and parentheses are stripped off.
+Matches non-static data members that have an in-class initializer.
+Matches a 'for', 'while', 'do while' statement or a function definition that has a given body.
+Matches the condition expression of an if statement, for loop, switch statement or conditional operator.
+Matches the increment statement of a for loop.
+Matches the initialization statement of a for loop.
+Overloaded to match the declaration of the expression's or value declaration's type.
+Matches if the expression's or declaration's type matches a type matcher.
+Matches any parameter of a function or an ObjC method declaration or a block.
+Matches classTemplateSpecializations, templateSpecializationType and functionDecl that have at least one TemplateArgument matching the given InnerMatcher.
+Matches a 'for', 'while', 'do while' statement or a function definition that has a given body.
+Matches the n'th parameter of a function or an ObjC method declaration or a block.
+Matches classTemplateSpecializations, templateSpecializationType and functionDecl where the n'th TemplateArgument matches the given InnerMatcher.
+Matches the return type of a function declaration.
+Matches the condition expression of an if statement, for loop, switch statement or conditional operator.
+Matches the condition variable statement in an if statement.
+Matches the else-statement of an if statement.
+Matches the then-statement of an if statement.
+Matches implicit casts whose destination type matches a given matcher.
+Matches the syntactic form of init list expressions (if expression have it).
+Matches a node if the declaration associated with that node matches the given matcher.
+Matches a node if the declaration associated with that node matches the given matcher.
+Matches a node if the declaration associated with that node matches the given matcher.
+Matches a member expression where the object expression is matched by a given matcher.
+Matches a member expression where the member is matched by a given matcher.
+Narrows PointerType (and similar) matchers to those where the pointee matches a given matcher.
+Narrows PointerType (and similar) matchers to those where the pointee matches a given matcher.
+Matches a NamedDecl whose underlying declaration matches the given matcher.
+Matches on the prefix of a NestedNameSpecifierLoc.
+Matches nested name specifier locs that specify a type matching the given TypeLoc.
+Matches on the prefix of a NestedNameSpecifier.
+Matches nested name specifiers that specify a namespace matching the given namespace matcher.
+Matches nested name specifiers that specify a type matching the given QualType matcher without qualifiers.
+Matches any argument of a call expression or a constructor call expression, or an ObjC-message-send expression.
+Matches the n'th argument of a call expression or a constructor call expression.
+Matches if the Objective-C message is sent to an instance, and the inner matcher matches on that instance.
+Matches on the receiver of an ObjectiveC Message expression.
+Matches any parameter of a function or an ObjC method declaration or a block.
+Matches the n'th parameter of a function or an ObjC method declaration or a block.
+Matches if the cast's source expression or opaque value's source expression matches the given matcher.
+Matches an OverloadExpr if any of the declarations in the set of overloads matches the given matcher.
+Matches ParenType nodes where the inner type is a specific type.
+Narrows PointerType (and similar) matchers to those where the pointee matches a given matcher.
+Narrows PointerType (and similar) matchers to those where the pointee matches a given matcher.
+Matches QualTypes whose canonical type matches InnerMatcher.
+Matches a node if the declaration associated with that node matches the given matcher.
+Matches types that match InnerMatcher after any parens are stripped.
+Overloaded to match the pointee type's declaration.
+Matches if the matched type is a pointer type and the pointee type matches the specified matcher.
+Overloaded to match the referenced type's declaration.
+Matches if the matched type is a reference type and the referenced type matches the specified matcher.
+Matches a node if the declaration associated with that node matches the given matcher.
+Narrows PointerType (and similar) matchers to those where the pointee matches a given matcher.
+Narrows PointerType (and similar) matchers to those where the pointee matches a given matcher.
+Matches the return value expression of a return statement
+Matches compound statements where at least one substatement matches a given matcher. Also matches StmtExprs that have CompoundStmt as children.
+Same as unaryExprOrTypeTraitExpr, but only matching alignof.
+Matches declaration of the function the statement belongs to
+Same as unaryExprOrTypeTraitExpr, but only matching sizeof.
+Matches template type parameter substitutions that have a replacement type that matches the provided matcher.
+Matches each case or default statement belonging to the given switch statement. This matcher may produce multiple matches.
+Matches the condition expression of an if statement, for loop, switch statement or conditional operator.
+Matches a node if the declaration associated with that node matches the given matcher.
+Matches a sugar TemplateArgument that refers to a certain expression.
+Matches a canonical TemplateArgument that refers to a certain declaration.
+Matches a TemplateArgument that referes to an integral type.
+Matches a TemplateArgument that refers to a certain template.
+Matches a TemplateArgument that refers to a certain type.
+Matches classTemplateSpecializations, templateSpecializationType and functionDecl that have at least one TemplateArgument matching the given InnerMatcher.
+Matches a node if the declaration associated with that node matches the given matcher.
+Matches classTemplateSpecializations, templateSpecializationType and functionDecl where the n'th TemplateArgument matches the given InnerMatcher.
+Matches a node if the declaration associated with that node matches the given matcher.
+Matches if the node or any descendant matches.
+Matches if the expression's or declaration's type matches a type matcher.
+Matches a node if the declaration associated with that node matches the given matcher.
+Matches if the matched type matches the unqualified desugared type of the matched node.
+Matches unary expressions that have a specific type of argument.
+Matches if the operand of a unary operator matches.
+Matches a member expression where the object expression is matched by a given matcher.
+Matches a node if the declaration associated with that node matches the given matcher.
+Matches any using shadow declaration.
+Matches a using shadow declaration where the target declaration is matched by the given matcher.
+Overloaded to match the declaration of the expression's or value declaration's type.
+Matches if the expression's or declaration's type matches a type matcher.
+Matches a variable declaration that has an initializer expression that matches the given matcher.
+Matches VariableArrayType nodes that have a specific size expression.
+Matches a 'for', 'while', 'do while' statement or a function definition that has a given body.
+Matches the condition expression of an if statement, for loop, switch statement or conditional operator.
+Matches NestedNameSpecifierLocs for which the given inner NestedNameSpecifier-matcher matches.
+Matches TypeLocs for which the given inner QualType-matcher matches.

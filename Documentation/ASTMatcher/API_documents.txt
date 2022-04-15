@@ -1,0 +1,2525 @@
+allOf
+input: Matcher<*>, ..., Matcher<*>
+return: Matcher<*>
+description: Matches if all given matchers match.
+
+anyOf
+input: Matcher<*>, ..., Matcher<*>
+return: Matcher<*>
+description: Matches if any of the given matchers matches.
+
+anything
+input: 
+return: Matcher<*>
+description: Matches any node, anything.
+
+unless
+input: Matcher<*>
+return: Matcher<*>
+description: Matches if the provided matcher does not match.
+
+hasOperatorName
+input: ck_string
+return: BinaryOperator
+description: Matches the operator name of operator expressions (binary or unary).
+
+isAssignmentOperator
+input: 
+return: BinaryOperator
+description: Matches all kinds of assignment operators.
+
+equals
+input: bool Value
+return: CXXBoolLiteralExpr
+description: Matches literals that are equal to the given value of type ValueT.
+
+equals_c
+input: const ValueT  Value
+return: CXXBoolLiteralExpr
+description: Matches literals that are equal to the given value of type ValueT.
+
+equals_c_c
+input: doubleValue
+return: CXXBoolLiteralExpr
+description: Matches literals that are equal to the given value of type ValueT.
+
+equals_c_c_c
+input: unsigned Value
+return: CXXBoolLiteralExpr
+description: Matches literals that are equal to the given value of type ValueT.
+
+isCatchAll
+input: 
+return: CXXCatchStmt
+description: Matches a C++ catch statement that has a catch-all handler.
+
+argumentCountIs
+input: unsigned N
+return: CXXConstructExpr
+description: Checks that a call expression or a constructor call expression has a specific number of arguments (including absent default arguments).
+
+isListInitialization
+input: 
+return: CXXConstructExpr
+description: Matches a constructor call expression which uses list initialization.
+
+requiresZeroInitialization
+input: 
+return: CXXConstructExpr
+description: Matches a constructor call expression which requires zero initialization.
+
+isCopyConstructor
+input: 
+return: CXXConstructorDecl
+description: Matches constructor declarations that are copy constructors.
+
+isDefaultConstructor
+input: 
+return: CXXConstructorDecl
+description: Matches constructor declarations that are default constructors.
+
+isDelegatingConstructor
+input: 
+return: CXXConstructorDecl
+description: Matches constructors that delegate to another constructor.
+
+isExplicit
+input: 
+return: CXXConstructorDecl
+description: Matches constructor and conversion declarations that are marked with the explicit keyword.
+
+isMoveConstructor
+input: 
+return: CXXConstructorDecl
+description: Matches constructor declarations that are move constructors.
+
+isExplicit_c
+input: 
+return: CXXConversionDecl
+description: Matches constructor and conversion declarations that are marked with the explicit keyword.
+
+isBaseInitializer
+input: 
+return: CXXCtorInitializer
+description: Matches a constructor initializer if it is initializing a base, as opposed to a member.
+
+isMemberInitializer
+input: 
+return: CXXCtorInitializer
+description: Matches a constructor initializer if it is initializing a member, as opposed to a base.
+
+isWritten
+input: 
+return: CXXCtorInitializer
+description: Matches a constructor initializer if it is explicitly written in code (as opposed to implicitly added by the compiler).
+
+isConst
+input: 
+return: CXXMethodDecl
+description: Matches if the given method declaration is const.
+
+isCopyAssignmentOperator
+input: 
+return: CXXMethodDecl
+description: Matches if the given method declaration declares a copy assignment operator.
+
+isFinal
+input: 
+return: CXXMethodDecl
+description: Matches if the given method or class declaration is final.
+
+isMoveAssignmentOperator
+input: 
+return: CXXMethodDecl
+description: Matches if the given method declaration declares a move assignment operator.
+
+isOverride
+input: 
+return: CXXMethodDecl
+description: Matches if the given method declaration overrides another method.
+
+isPure
+input: 
+return: CXXMethodDecl
+description: Matches if the given method declaration is pure.
+
+isUserProvided
+input: 
+return: CXXMethodDecl
+description: Matches method declarations that are user-provided.
+
+isVirtual
+input: 
+return: CXXMethodDecl
+description: Matches if the given method declaration is virtual.
+
+isVirtualAsWritten
+input: 
+return: CXXMethodDecl
+description: Matches if the given method declaration has an explicit "virtual".
+
+isArray
+input: 
+return: CXXNewExpr
+description: Matches array new expressions.
+
+hasOverloadedOperatorName
+input: ck_string
+return: CXXOperatorCallExpr
+description: Matches overloaded operator names. has overloaded operator name
+
+isAssignmentOperator_c
+input: 
+return: CXXOperatorCallExpr
+description: Matches all kinds of assignment operators.
+
+hasDefinition
+input: 
+return: CXXRecordDecl
+description: Matches a class declaration that is defined.
+
+isDerivedFrom
+input: std::string BaseName
+return: CXXRecordDecl
+description: Overloaded method as shortcut for isDerivedFrom(hasName(...)).
+
+isExplicitTemplateSpecialization
+input: 
+return: CXXRecordDecl
+description: Matches explicit template specializations of function, class, or static member variable template instantiations.
+
+isFinal_c
+input: 
+return: CXXRecordDecl
+description: Matches if the given method or class declaration is final.
+
+isLambda
+input: 
+return: CXXRecordDecl
+description: Matches the generated class of lambda expressions.
+
+isSameOrDerivedFrom
+input: std::string BaseName
+return: CXXRecordDecl
+description: Overloaded method as shortcut for isSameOrDerivedFrom(hasName(...)).
+
+isTemplateInstantiation
+input: 
+return: CXXRecordDecl
+description: Matches template instantiations of function, class, or static member variable template instantiations.
+
+argumentCountIs_c
+input: unsigned N
+return: CallExpr
+description: Checks that a call expression or a constructor call expression has a specific number of arguments (including absent default arguments).
+
+hasCastKind
+input: CastKind Kind
+return: CastExpr
+description: Matches casts that has a given cast kind.
+
+equals_c_c_c_c
+input: bool Value
+return: CharacterLiteral
+description: Matches literals that are equal to the given value of type ValueT.
+
+equals_c_c_c_c_c
+input: const ValueT  Value
+return: CharacterLiteral
+description: Matches literals that are equal to the given value of type ValueT.
+
+equals_c_c_c_c_c_c
+input: double Value
+return: CharacterLiteral
+description: Matches literals that are equal to the given value of type ValueT.
+
+equals_c_c_c_c_c_c_c
+input: unsigned Value
+return: CharacterLiteral
+description: Matches literals that are equal to the given value of type ValueT.
+
+templateArgumentCountIs
+input: unsigned N
+return: ClassTemplateSpecializationDecl
+description: Matches if the number of template arguments equals N.
+
+statementCountIs
+input: unsigned N
+return: CompoundStmt
+description: Checks that a compound statement contains a specific number of child statements.
+
+hasSize
+input: unsigned N
+return: ConstantArrayType
+description: Matches nodes that have the specified size.
+
+declCountIs
+input: unsigned N
+return: DeclStmt
+description: Matches declaration statements that contain a specific number of declarations.
+
+equalsBoundNode
+input: std::string ID
+return: Decl
+description: Matches if a node equals a previously bound node.
+
+equalsNode
+input: const Decl* Other
+return: Decl
+description: Matches if a node equals another node.
+
+hasAttr
+input: attr::Kind AttrKind
+return: Decl
+description: Matches declaration that has a given attribute.
+
+isExpansionInFileMatching
+input: std::string RegExp
+return: Decl
+description: Matches AST nodes that were expanded within files whose name is partially matching a given regex.
+
+isExpansionInMainFile
+input: 
+return: Decl
+description: Matches AST nodes that were expanded within the main-file.
+
+isExpansionInSystemHeader
+input: 
+return: Decl
+description: Matches AST nodes that were expanded within system header files.
+
+isImplicit
+input: 
+return: Decl
+description: Matches a declaration that has been implicitly added by the compiler (eg. implicit defaultcopy constructors).
+
+isPrivate
+input: 
+return: Decl
+description: Matches private C++ declarations.
+
+isProtected
+input: 
+return: Decl
+description: Matches protected C++ declarations.
+
+isPublic
+input: 
+return: Decl
+description: Matches public C++ declarations.
+
+designatorCountIs
+input: unsigned N
+return: DesignatedInitExpr
+description: Matches designated initializer expressions that contain a specific number of designators.
+
+isScoped
+input: 
+return: EnumDecl
+description: Matches C++11 scoped enum declaration.
+
+hasBitWidth
+input: unsigned Width
+return: FieldDecl
+description: Matches non-static data members that are bit-fields of the specified bit width.
+
+isBitField
+input: 
+return: FieldDecl
+description: Matches non-static data members that are bit-fields.
+
+equals_c_c_c_c_c_c_c_c
+input: const ValueT  Value
+return: FloatingLiteral
+description: Matches literals that are equal to the given value of type ValueT.
+
+equals_c_c_c_c_c_c_c_c_c
+input: double Value
+return: FloatingLiteral
+description: Matches literals that are equal to the given value of type ValueT.
+
+hasDynamicExceptionSpec
+input: 
+return: FunctionDecl
+description: Matches functions that have a dynamic exception specification.
+
+hasOverloadedOperatorName_c
+input: ck_string
+return: FunctionDecl
+description: Matches overloaded operator names. has overloaded operator name.
+
+hasTrailingReturn
+input: 
+return: FunctionDecl
+description: Matches a function declared with a trailing return type.
+
+isConstexpr
+input: 
+return: FunctionDecl
+description: Matches constexpr variable and function declarations,        and if constexpr.
+
+isDefaulted
+input: 
+return: FunctionDecl
+description: Matches defaulted function declarations.
+
+isDefinition
+input: 
+return: FunctionDecl
+description: Matches if a declaration has a body attached. Matches if declarations have a body attached
+
+isDeleted
+input: 
+return: FunctionDecl
+description: Matches deleted function declarations.
+
+isExplicitTemplateSpecialization_c
+input: 
+return: FunctionDecl
+description: Matches explicit template specializations of function, class, or static member variable template instantiations.
+
+isExternC
+input: 
+return: FunctionDecl
+description: Matches extern "C" function or variable declarations.
+
+isInline
+input: 
+return: FunctionDecl
+description: Matches function and namespace declarations that are marked with the inline keyword.
+
+isMain
+input: 
+return: FunctionDecl
+description: Determines whether the function is "main", which is the entry point into an executable program.
+
+isNoReturn
+input: 
+return: FunctionDecl
+description: Matches FunctionDecls that have a noreturn attribute.
+
+isNoThrow
+input: 
+return: FunctionDecl
+description: Matches functions that have a non-throwing exception specification.
+
+isStaticStorageClass
+input: 
+return: FunctionDecl
+description: Matches variablefunction declarations that have "static" storage class specifier ("static" keyword) written in the source.
+
+isTemplateInstantiation_c
+input: 
+return: FunctionDecl
+description: Matches template instantiations of function, class, or static member variable template instantiations.
+
+isVariadic
+input: 
+return: FunctionDecl
+description: Matches if a function declaration is variadic.
+
+parameterCountIs
+input: unsigned N
+return: FunctionDecl
+description: Matches FunctionDecls and FunctionProtoTypes that have a specific parameter count.
+
+hasDynamicExceptionSpec_c
+input: 
+return: FunctionProtoType
+description: Matches functions that have a dynamic exception specification.
+
+isNoThrow_c
+input: 
+return: FunctionProtoType
+description: Matches functions that have a non-throwing exception specification.
+
+parameterCountIs_c
+input: unsigned N
+return: FunctionProtoType
+description: Matches FunctionDecls and FunctionProtoTypes that have a specific parameter count.
+
+isConstexpr_c
+input: 
+return: IfStmt
+description: Matches constexpr variable and function declarations,        and if constexpr.
+
+equals_c_c_c_c_c_c_c_c_c_c
+input: bool Value
+return: IntegerLiteral
+description: Matches literals that are equal to the given value of type ValueT.
+
+equals_c_c_c_c_c_c_c_c_c_c_c
+input: const ValueT  Value
+return: IntegerLiteral
+description: Matches literals that are equal to the given value of type ValueT.
+
+equals_c_c_c_c_c_c_c_c_c_c_c_c
+input: doubleValue
+return: IntegerLiteral
+description: Matches literals that are equal to the given value of type ValueT.
+
+equals_c_c_c_c_c_c_c_c_c_c_c_c_c
+input: unsigned Value
+return: IntegerLiteral
+description: Matches literals that are equal to the given value of type ValueT.
+
+isArrow
+input: 
+return: MemberExpr
+description: Matches member expressions that are called with '-&gt;' as opposed to '.'.
+
+hasExternalFormalLinkage
+input: 
+return: NamedDecl
+description: Matches a declaration that has external formal linkage.
+
+hasName
+input: ck_string
+return: NamedDecl
+description: Matches NamedDecl nodes that have the specified name.
+
+matchesName
+input: std::string RegExp
+return: NamedDecl
+description: Matches NamedDecl nodes whose fully qualified names contain a substring matched by the given RegExp.
+
+isAnonymous
+input: 
+return: NamespaceDecl
+description: Matches anonymous namespace declarations.
+
+isInline_c
+input: 
+return: NamespaceDecl
+description: Matches function and namespace declarations that are marked with the inline keyword.
+
+argumentCountIs_c_c
+input: unsigned N
+return: ObjCMessageExpr
+description: Checks that a call expression or a constructor call expression has a specific number of arguments (including absent default arguments).
+
+hasKeywordSelector
+input: 
+return: ObjCMessageExpr
+description: Matches when the selector is a keyword selector
+
+hasNullSelector
+input: 
+return: ObjCMessageExpr
+description: Matches when the selector is the empty selector
+
+hasSelector
+input: std::string BaseName
+return: ObjCMessageExpr
+description: Matches when BaseName == Selector.getAsString()
+
+hasUnarySelector
+input: 
+return: ObjCMessageExpr
+description: Matches when the selector is a Unary Selector
+
+isInstanceMessage
+input: 
+return: ObjCMessageExpr
+description: Returns true when the Objective-C message is sent to an instance.
+
+matchesSelector
+input: std::string RegExp
+return: ObjCMessageExpr
+description: Matches ObjC selectors whose name contains a substring matched by the given RegExp.  matcher = objCMessageExpr(matchesSelector("loadHTMLStringmatches the outer message expr in the code below, but NOT the message  invocation for self.bodyView.     [self.bodyView loadHTMLString:html baseURL:NULL];
+
+numSelectorArgs
+input: unsigned N
+return: ObjCMessageExpr
+description: Matches when the selector has the specified number of arguments
+
+isDefinition_c
+input: 
+return: ObjCMethodDecl
+description: Matches if a declaration has a body attached.
+
+hasDefaultArgument
+input: 
+return: ParmVarDecl
+description: Matches a declaration that has default arguments.
+
+asString
+input: std::string Name
+return: QualType
+description: Matches if the matched type is represented by the given string.
+
+equalsBoundNode_c
+input: std::string ID
+return: QualType
+description: Matches if a node equals a previously bound node.
+
+hasLocalQualifiers
+input: 
+return: QualType
+description: Matches QualType nodes that have local CV-qualifiers attached to the node, not hidden within a typedef.
+
+isAnyCharacter
+input: 
+return: QualType
+description: Matches QualType nodes that are of character type.
+
+isAnyPointer
+input: 
+return: QualType
+description: Matches QualType nodes that are of any pointer type; this includes the Objective-C object pointer type, which is different despite being syntactically similar.
+
+isConstQualified
+input: 
+return: QualType
+description: Matches QualType nodes that are const-qualified, i.e., that include "top-level" const.
+
+isInteger
+input: 
+return: QualType
+description: Matches QualType nodes that are of integer type.
+
+isSignedInteger
+input: 
+return: QualType
+description: Matches QualType nodes that are of signed integer type.
+
+isUnsignedInteger
+input: 
+return: QualType
+description: Matches QualType nodes that are of unsigned integer type.
+
+isVolatileQualified
+input: 
+return: QualType
+description: Matches QualType nodes that are volatile-qualified, i.e., that include "top-level" volatile.
+
+isClass
+input: 
+return: RecordDecl
+description: Matches RecordDecl object that are spelled with "class."
+
+isStruct
+input: 
+return: RecordDecl
+description: Matches RecordDecl object that are spelled with "struct."
+
+isUnion
+input: 
+return: RecordDecl
+description: Matches RecordDecl object that are spelled with "union." union
+
+equalsBoundNode_c_c
+input: std::string ID
+return: Stmt
+description: Matches if a node equals a previously bound node.
+
+equalsNode_c
+input: const Stmt* Other
+return: Stmt
+description: Matches if a node equals another node.
+
+isExpansionInFileMatching_c
+input: std::string RegExp
+return: Stmt
+description: Matches AST nodes that were expanded within files whose name is partially matching a given regex.
+
+isExpansionInMainFile_c
+input: 
+return: Stmt
+description: Matches AST nodes that were expanded within the main-file.
+
+isExpansionInSystemHeader_c
+input: 
+return: Stmt
+description: Matches AST nodes that were expanded within system-header-files.
+
+hasSize_c
+input: unsigned N
+return: StringLiteral
+description: Matches nodes that have the specified size.
+
+isDefinition_c_c
+input: 
+return: TagDecl
+description: Matches if a declaration has a body attached.
+
+equalsIntegralValue
+input: std::string Value
+return: TemplateArgument
+description: Matches a TemplateArgument of integral type with a given value.
+
+isIntegral
+input: 
+return: TemplateArgument
+description: Matches a TemplateArgument that is an integral value.
+
+templateArgumentCountIs_c
+input: unsigned N
+return: TemplateSpecializationType
+description: Matches if the number of template arguments equals N.
+
+isExpansionInFileMatching_c_c
+input: std::string RegExp
+return: TypeLoc
+description: Matches AST nodes that were expanded within files whose name is partially matching a given regex.
+
+isExpansionInMainFile_c_c
+input: 
+return: TypeLoc
+description: Matches AST nodes that were expanded within the main-file.
+
+isExpansionInSystemHeader_c_c
+input: 
+return: TypeLoc
+description: Matches AST nodes that were expanded within system-header-files.
+
+booleanType
+input: 
+return: Type
+description: Matches type bool, boolean.
+
+equalsBoundNode_c_c_c
+input: std::string ID
+return: Type
+description: Matches if a node equals a previously bound node.
+
+equalsNode_c_c
+input: const Type* Other
+return: Type
+description: Matches if a node equals another node.
+
+realFloatingPointType
+input: 
+return: Type
+description: Matches any real floating-point type (float, double, long double).
+
+voidType
+input: 
+return: Type
+description: Matches type void.
+
+ofKind
+input: UnaryExprOrTypeTrait Kind
+return: UnaryExprOrTypeTraitExpr
+description: Matches unary expressions of a certain kind.
+
+hasOperatorName_c
+input: ck_string
+return: UnaryOperator
+description: Matches the operator name of operator expressions (binary or unary).
+
+hasAutomaticStorageDuration
+input: 
+return: VarDecl
+description: Matches a variable declaration that has automatic storage duration.
+
+hasGlobalStorage
+input: 
+return: VarDecl
+description: Matches a variable declaration that does not have local storage.
+
+hasLocalStorage
+input: 
+return: VarDecl
+description: Matches a variable declaration that has function scope and is a non-static local variable.
+
+hasStaticStorageDuration
+input: 
+return: VarDecl
+description: Matches a variable declaration that has static storage duration. It includes the variable declared at namespace scope and those declared with "static" and "extern" storage class specifiers.
+
+hasThreadStorageDuration
+input: 
+return: VarDecl
+description: Matches a variable declaration that has thread storage duration.
+
+isConstexpr_c_c
+input: 
+return: VarDecl
+description: Matches constexpr variable and function declarations,        and if constexpr.
+
+isDefinition_c_c_c
+input: 
+return: VarDecl
+description: Matches if a declaration has a body attached.
+
+isExceptionVariable
+input: 
+return: VarDecl
+description: Matches a variable declaration that is an exception variable from a C++ catch block, or an Objective-C statement.
+
+isExplicitTemplateSpecialization_c_c
+input: 
+return: VarDecl
+description: Matches explicit template specializations of function, class, or static member variable template instantiations.
+
+isExternC_c
+input: 
+return: VarDecl
+description: Matches extern "C" function or variable declarations.
+
+isStaticStorageClass_c
+input: 
+return: VarDecl
+description: Matches variablefunction declarations that have "static" storage class specifier ("static" keyword) written in the source.
+
+isTemplateInstantiation_c_c
+input: 
+return: VarDecl
+description: Matches template instantiations of function, class, or static member variable template instantiations.
+
+isInstantiated
+input: 
+return: Decl
+description: Matches declarations that are template instantiations or are inside template instantiations.
+
+nullPointerConstant
+input: 
+return: Expr
+description: Matches expressions that resolve to a null pointer constant, such as GNU's __null, C++11's nullptr, or C's NULL macro.
+
+hasAnyName
+input: StringRef, ..., StringRef
+return: NamedDecl
+description: Matches NamedDecl nodes that have any of the specified names.
+
+hasAnySelector
+input: StringRef, ..., StringRef
+return: ObjCMessageExpr
+description: Matches when at least one of the supplied string equals to the Selector.getAsString()
+
+isInTemplateInstantiation
+input: 
+return: Stmt
+description: Matches statements inside of a template instantiation.
+
+cxxCtorInitializer
+input: CXXCtorInitializer
+return: CXXCtorInitializer
+description: Matches constructor initializers.
+
+accessSpecDecl
+input: AccessSpecDecl
+return: Decl
+description: Matches C++ access specifier declarations.
+
+blockDecl
+input: BlockDecl
+return: Decl
+description: Matches block declarations.
+
+classTemplateDecl
+input: ClassTemplateDecl
+return: Decl
+description: Matches C++ class template declarations.
+
+classTemplateSpecializationDecl
+input: ClassTemplateSpecializationDecl
+return: Decl
+description: Matches C++ class template specializations.
+
+cxxConstructorDecl
+input: CXXConstructorDecl
+return: Decl
+description: Matches C++ constructor declarations.
+
+cxxConversionDecl
+input: CXXConversionDecl
+return: Decl
+description: Matches conversion operator declarations.
+
+cxxDestructorDecl
+input: CXXDestructorDecl
+return: Decl
+description: Matches explicit C++ destructor declarations.
+
+cxxMethodDecl
+input: CXXMethodDecl
+return: Decl
+description: Matches method declarations.
+
+cxxRecordDecl
+input: CXXRecordDecl
+return: Decl
+description: Matches C++ class declarations.
+
+decl
+input: Decl
+return: Decl
+description: Matches declarations.
+
+declaratorDecl
+input: DeclaratorDecl
+return: Decl
+description: Matches declarator declarations.
+
+enumConstantDecl
+input: EnumConstantDecl
+return: Decl
+description: Matches enum constants.
+
+enumDecl
+input: EnumDecl
+return: Decl
+description: Matches enum declarations.
+
+fieldDecl
+input: FieldDecl
+return: Decl
+description: Matches field declarations.
+
+friendDecl
+input: FriendDecl
+return: Decl
+description: Matches friend declarations.
+
+functionDecl
+input: FunctionDecl
+return: Decl
+description: Matches function declarations.
+
+functionTemplateDecl
+input: FunctionTemplateDecl
+return: Decl
+description: Matches C++ function template declarations.
+
+labelDecl
+input: LabelDecl
+return: Decl
+description: Matches a declaration of label.
+
+linkageSpecDecl
+input: LinkageSpecDecl
+return: Decl
+description: Matches a declaration of a linkage specification.
+
+namedDecl
+input: NamedDecl
+return: Decl
+description: Matches a declaration of anything that could have a name.
+
+namespaceAliasDecl
+input: NamespaceAliasDecl
+return: Decl
+description: Matches a declaration of a namespace alias.
+
+namespaceDecl
+input: NamespaceDecl
+return: Decl
+description: Matches a declaration of a namespace.
+
+nonTypeTemplateParmDecl
+input: NonTypeTemplateParmDecl
+return: Decl
+description: Matches non-type template parameter declarations.
+
+objcCategoryDecl
+input: ObjCCategoryDecl
+return: Decl
+description: Matches Objective-C category declarations.
+
+objcCategoryImplDecl
+input: ObjCCategoryImplDecl
+return: Decl
+description: Matches Objective-C category definitions.
+
+objcImplementationDecl
+input: ObjCImplementationDecl
+return: Decl
+description: Matches Objective-C implementation declarations.
+
+objcInterfaceDecl
+input: ObjCInterfaceDecl
+return: Decl
+description: Matches Objective-C interface declarations.
+
+objcIvarDecl
+input: ObjCIvarDecl
+return: Decl
+description: Matches Objective-C instance variable declarations.
+
+objcMethodDecl
+input: ObjCMethodDecl
+return: Decl
+description: Matches Objective-C method declarations.
+
+objcPropertyDecl
+input: ObjCPropertyDecl
+return: Decl
+description: Matches Objective-C property declarations.
+
+objcProtocolDecl
+input: ObjCProtocolDecl
+return: Decl
+description: Matches Objective-C protocol declarations.
+
+parmVarDecl
+input: ParmVarDecl
+return: Decl
+description: Matches parameter variable declarations.
+
+recordDecl
+input: RecordDecl
+return: Decl
+description: Matches class, struct, and union declarations. recorddecl
+
+staticAssertDecl
+input: StaticAssertDecl
+return: Decl
+description: Matches a C++ static_assert declaration.
+
+templateTypeParmDecl
+input: TemplateTypeParmDecl
+return: Decl
+description: Matches template type parameter declarations.
+
+translationUnitDecl
+input: TranslationUnitDecl
+return: Decl
+description: Matches the top declaration context.
+
+typeAliasDecl
+input: TypeAliasDecl
+return: Decl
+description: Matches type alias declarations.
+
+typeAliasTemplateDecl
+input: TypeAliasTemplateDecl
+return: Decl
+description: Matches type alias template declarations.
+
+typedefDecl
+input: TypedefDecl
+return: Decl
+description: Matches typedef declarations.
+
+typedefNameDecl
+input: TypedefNameDecl
+return: Decl
+description: Matches typedef name declarations.
+
+unresolvedUsingTypenameDecl
+input: UnresolvedUsingTypenameDecl
+return: Decl
+description: Matches unresolved using value declarations that involve the typename.
+
+unresolvedUsingValueDecl
+input: UnresolvedUsingValueDecl
+return: Decl
+description: Matches unresolved using value declarations.
+
+usingDecl
+input: UsingDecl
+return: Decl
+description: Matches using declarations.
+
+usingDirectiveDecl
+input: UsingDirectiveDecl
+return: Decl
+description: Matches using namespace declarations.
+
+valueDecl
+input: ValueDecl
+return: Decl
+description: Matches any value declaration.
+
+varDecl
+input: VarDecl
+return: Decl
+description: Matches variable declarations.
+
+nestedNameSpecifierLoc
+input: NestedNameSpecifierLoc
+return: NestedNameSpecifierLoc
+description: Same as nestedNameSpecifier but matches NestedNameSpecifierLoc.
+
+nestedNameSpecifier
+input: NestedNameSpecifier
+return: NestedNameSpecifier
+description: Matches nested name specifiers.
+
+qualType
+input: QualType
+return: QualType
+description: Matches QualTypes in the clang AST.
+
+addrLabelExpr
+input: AddrLabelExpr
+return: Stmt
+description: Matches address of label statements (GNU extension).
+
+arraySubscriptExpr
+input: ArraySubscriptExpr
+return: Stmt
+description: Matches array subscript expressions.
+
+asmStmt
+input: AsmStmt
+return: Stmt
+description: Matches asm statements.
+
+atomicExpr
+input: AtomicExpr
+return: Stmt
+description: Matches atomic builtins. Example matches __atomic_load_n(ptr, 1)   void foo() { int *ptr; __atomic_load_n(ptr, 1); }
+
+autoreleasePoolStmt
+input: ObjCAutoreleasePoolStmt
+return: Stmt
+description: Matches an Objective-C autorelease pool statement.
+
+binaryConditionalOperator
+input: BinaryConditionalOperator
+return: Stmt
+description: Matches binary conditional operator expressions (GNU extension).
+
+binaryOperator
+input: BinaryOperator
+return: Stmt
+description: Matches binary operator expressions.
+
+breakStmt
+input: BreakStmt
+return: Stmt
+description: Matches break statements.
+
+cStyleCastExpr
+input: CStyleCastExpr
+return: Stmt
+description: Matches a C-style cast expression.
+
+callExpr
+input: CallExpr
+return: Stmt
+description: Matches call expressions.
+
+caseStmt
+input: CaseStmt
+return: Stmt
+description: Matches case statements inside switch statements.
+
+castExpr
+input: CastExpr
+return: Stmt
+description: Matches any cast nodes of Clang's AST.
+
+characterLiteral
+input: CharacterLiteral
+return: Stmt
+description: Matches character literals (also matches wchar_t).
+
+compoundLiteralExpr
+input: CompoundLiteralExpr
+return: Stmt
+description: Matches compound (i.e. non-scalar) literals
+
+compoundStmt
+input: CompoundStmt
+return: Stmt
+description: Matches compound statements.
+
+conditionalOperator
+input: ConditionalOperator
+return: Stmt
+description: Matches conditional operator expressions.
+
+continueStmt
+input: ContinueStmt
+return: Stmt
+description: Matches continue statements.
+
+cudaKernelCallExpr
+input: CUDAKernelCallExpr
+return: Stmt
+description: Matches CUDA kernel call expression.
+
+cxxBindTemporaryExpr
+input: CXXBindTemporaryExpr
+return: Stmt
+description: Matches nodes where temporaries are created.
+
+cxxBoolLiteral
+input: CXXBoolLiteralExpr
+return: Stmt
+description: Matches bool literals.
+
+cxxCatchStmt
+input: CXXCatchStmt
+return: Stmt
+description: Matches catch statements.
+
+cxxConstCastExpr
+input: CXXConstCastExpr
+return: Stmt
+description: Matches a constcast expression.
+
+cxxConstructExpr
+input: CXXConstructExpr
+return: Stmt
+description: Matches constructor call expressions (including implicit ones). cxx construct expression.
+
+cxxDefaultArgExpr
+input: CXXDefaultArgExpr
+return: Stmt
+description: Matches the value of a default argument at the call site.
+
+cxxDeleteExpr
+input: CXXDeleteExpr
+return: Stmt
+description: Matches delete expressions.
+
+cxxDependentScopeMemberExpr
+input: CXXDependentScopeMemberExpr
+return: Stmt
+description: Matches member expressions where the actual member referenced could not be resolved because the base expression or the member name was dependent.
+
+cxxDynamicCastExpr
+input: CXXDynamicCastExpr
+return: Stmt
+description: Matches a dynamic_cast expression.
+
+cxxForRangeStmt
+input: CXXForRangeStmt
+return: Stmt
+description: Matches range-based for statements.
+
+cxxFunctionalCastExpr
+input: CXXFunctionalCastExpr
+return: Stmt
+description: Matches functional cast expressions
+
+cxxMemberCallExpr
+input: CXXMemberCallExpr
+return: Stmt
+description: Matches member call expressions.
+
+cxxNewExpr
+input: CXXNewExpr
+return: Stmt
+description: Matches new expressions.
+
+cxxNullPtrLiteralExpr
+input: CXXNullPtrLiteralExpr
+return: Stmt
+description: Matches nullptr literal.
+
+cxxOperatorCallExpr
+input: CXXOperatorCallExpr
+return: Stmt
+description: Matches overloaded operator calls.
+
+cxxReinterpretCastExpr
+input: CXXReinterpretCastExpr
+return: Stmt
+description: Matches a reinterpret_cast expression.
+
+cxxStaticCastExpr
+input: CXXStaticCastExpr
+return: Stmt
+description: Matches a C++ static_cast expression.
+
+cxxStdInitializerListExpr
+input: CXXStdInitializerListExpr
+return: Stmt
+description: Matches C++ initializer list expressions.
+
+cxxTemporaryObjectExpr
+input: CXXTemporaryObjectExpr
+return: Stmt
+description: Matches functional cast expressions having N != 1 arguments
+
+cxxThisExpr
+input: CXXThisExpr
+return: Stmt
+description: Matches implicit and explicit this expressions.
+
+cxxThrowExpr
+input: CXXThrowExpr
+return: Stmt
+description: Matches throw expressions.
+
+cxxTryStmt
+input: CXXTryStmt
+return: Stmt
+description: Matches try statements.
+
+cxxUnresolvedConstructExpr
+input: CXXUnresolvedConstructExpr
+return: Stmt
+description: Matches unresolved constructor call expressions.
+
+declRefExpr
+input: DeclRefExpr
+return: Stmt
+description: Matches expressions that refer to declarations.
+
+declStmt
+input: DeclStmt
+return: Stmt
+description: Matches declaration statements. Matches a statement that declares something.
+
+defaultStmt
+input: DefaultStmt
+return: Stmt
+description: Matches default statements inside switch statements.
+
+designatedInitExpr
+input: DesignatedInitExpr
+return: Stmt
+description: Matches C99 designated initializer expressions [C99 6.7.8].
+
+doStmt
+input: DoStmt
+return: Stmt
+description: Matches do statements.
+
+explicitCastExpr
+input: ExplicitCastExpr
+return: Stmt
+description: Matches explicit cast expressions.
+
+expr
+input: Expr
+return: Stmt
+description: Matches expressions. expression.
+
+exprWithCleanups
+input: ExprWithCleanups
+return: Stmt
+description: Matches expressions that introduce cleanups to be run at the end of the sub-expression's evaluation.
+
+floatLiteral
+input: FloatingLiteral
+return: Stmt
+description: Matches float literal of all sizes encodings, e.g. 1.0, 1.0f, 1.0L and 1e10.
+
+forStmt
+input: ForStmt
+return: Stmt
+description: Matches for statements.
+
+gnuNullExpr
+input: GNUNullExpr
+return: Stmt
+description: Matches GNU __null expression.
+
+gotoStmt
+input: GotoStmt
+return: Stmt
+description: Matches goto statements.
+
+ifStmt
+input: IfStmt
+return: Stmt
+description: Matches if statements.
+
+implicitCastExpr
+input: ImplicitCastExpr
+return: Stmt
+description: Matches the implicit cast nodes of Clang's AST.
+
+implicitValueInitExpr
+input: ImplicitValueInitExpr
+return: Stmt
+description: Matches implicit initializers of init list expressions.
+
+initListExpr
+input: InitListExpr
+return: Stmt
+description: Matches init list expressions.
+
+integerLiteral
+input: IntegerLiteral
+return: Stmt
+description: Matches integer literals of all sizes encodings.
+
+labelStmt
+input: LabelStmt
+return: Stmt
+description: Matches label statements.
+
+lambdaExpr
+input: LambdaExpr
+return: Stmt
+description: Matches lambda expressions.
+
+materializeTemporaryExpr
+input: MaterializeTemporaryExpr
+return: Stmt
+description: Matches nodes where temporaries are materialized.
+
+memberExpr
+input: MemberExpr
+return: Stmt
+description: Matches member expressions.
+
+nullStmt
+input: NullStmt
+return: Stmt
+description: Matches null statements.
+
+objcCatchStmt
+input: ObjCAtCatchStmt
+return: Stmt
+description: Matches Objective-C @catch statements.
+
+objcFinallyStmt
+input: ObjCAtFinallyStmt
+return: Stmt
+description: Matches Objective-C @finally statements.
+
+objcIvarRefExpr
+input: ObjCIvarRefExpr
+return: Stmt
+description: Matches a reference to an ObjCIvar.
+
+objcMessageExpr
+input: ObjCMessageExpr
+return: Stmt
+description: Matches ObjectiveC Message invocation expressions.
+
+objcThrowStmt
+input: ObjCAtThrowStmt
+return: Stmt
+description: Matches Objective-C statements.
+
+objcTryStmt
+input: ObjCAtTryStmt
+return: Stmt
+description: Matches Objective-C @try statements.
+
+opaqueValueExpr
+input: OpaqueValueExpr
+return: Stmt
+description: Matches opaque value expressions. They are used as helpers to reference another expressions and can be met in BinaryConditionalOperators, for example.
+
+parenExpr
+input: ParenExpr
+return: Stmt
+description: Matches parentheses used in expressions.
+
+parenListExpr
+input: ParenListExpr
+return: Stmt
+description: Matches paren list expressions. ParenListExprs don't have a predefined type and are used for late parsing. In the final AST, they can be met in template declarations.
+
+predefinedExpr
+input: PredefinedExpr
+return: Stmt
+description: Matches predefined identifier expressions [C99 6.4.2.2].
+
+returnStmt
+input: ReturnStmt
+return: Stmt
+description: Matches return statements.
+
+stmt
+input: Stmt
+return: Stmt
+description: Matches statements.
+
+stmtExpr
+input: StmtExpr
+return: Stmt
+description: Matches statement expression (GNU extension).
+
+stringLiteral
+input: StringLiteral
+return: Stmt
+description: Matches string literals (also matches wide string literals).
+
+substNonTypeTemplateParmExpr
+input: SubstNonTypeTemplateParmExpr
+return: Stmt
+description: Matches substitutions of non-type template parameters.
+
+switchCase
+input: SwitchCase
+return: Stmt
+description: Matches case and default statements inside switch statements.
+
+switchStmt
+input: SwitchStmt
+return: Stmt
+description: Matches switch statements.
+
+unaryExprOrTypeTraitExpr
+input: UnaryExprOrTypeTraitExpr
+return: Stmt
+description: Matches sizeof (C99), alignof (C++11) and vec_step (OpenCL)
+
+unaryOperator
+input: UnaryOperator
+return: Stmt
+description: Matches unary operator expressions.
+
+unresolvedLookupExpr
+input: UnresolvedLookupExpr
+return: Stmt
+description: Matches reference to a name that can be looked up during parsing but could not be resolved to a specific declaration.
+
+unresolvedMemberExpr
+input: UnresolvedMemberExpr
+return: Stmt
+description: Matches unresolved member expressions.
+
+userDefinedLiteral
+input: UserDefinedLiteral
+return: Stmt
+description: Matches user defined literal operator call.
+
+whileStmt
+input: WhileStmt
+return: Stmt
+description: Matches while statements.
+
+templateArgument
+input: TemplateArgument
+return: TemplateArgument
+description: Matches template arguments.
+
+templateName
+input: TemplateName
+return: TemplateName
+description: Matches template name.
+
+typeLoc
+input: TypeLoc
+return: TypeLoc
+description: Matches TypeLocs in the clang AST.
+
+arrayType
+input: ArrayType
+return: Type
+description: Matches all kinds of arrays.
+
+atomicType
+input: AtomicType
+return: Type
+description: Matches atomic types.
+
+autoType
+input: AutoType
+return: Type
+description: Matches types nodes representing C++11 auto types.
+
+blockPointerType
+input: BlockPointerType
+return: Type
+description: Matches block pointer types, i.e. types syntactically represented as "void (^)(int)".
+
+builtinType
+input: BuiltinType
+return: Type
+description: Matches builtin Types.
+
+complexType
+input: ComplexType
+return: Type
+description: Matches C99 complex types.
+
+constantArrayType
+input: ConstantArrayType
+return: Type
+description: Matches C arrays with a specified constant size.
+
+decayedType
+input: DecayedType
+return: Type
+description: Matches decayed type Example matches i[] in declaration of f.     (matcher = valueDecl(hasType(decayedType(hasDecayedType(pointerType()))))) Example matches i[1].     (matcher = expr(hasType(decayedType(hasDecayedType(pointerType())))))   void f(int i[]) {     i[1] = 0;   }
+
+decltypeType
+input: DecltypeType
+return: Type
+description: Matches types nodes representing C++11 decltype(&lt;expr&gt;) types.
+
+dependentSizedArrayType
+input: DependentSizedArrayType
+return: Type
+description: Matches C++ arrays whose size is a value-dependent expression.
+
+elaboratedType
+input: ElaboratedType
+return: Type
+description: Matches types specified with an elaborated type keyword or with a qualified name.
+
+enumType
+input: EnumType
+return: Type
+description: Matches enum types.
+
+functionProtoType
+input: FunctionProtoType
+return: Type
+description: Matches FunctionProtoType nodes.
+
+functionType
+input: FunctionType
+return: Type
+description: Matches FunctionType nodes.
+
+incompleteArrayType
+input: IncompleteArrayType
+return: Type
+description: Matches C arrays with unspecified size.
+
+injectedClassNameType
+input: InjectedClassNameType
+return: Type
+description: Matches injected class name types.
+
+lValueReferenceType
+input: LValueReferenceType
+return: Type
+description: Matches lvalue reference types.
+
+memberPointerType
+input: MemberPointerType
+return: Type
+description: Matches member pointer types. Given   struct A { int i; }   A::* ptr = A::i; memberPointerType()   matches "A::* ptr"
+
+objcObjectPointerType
+input: ObjCObjectPointerType
+return: Type
+description: Matches an Objective-C object pointer type, which is different from a pointer type, despite being syntactically similar.
+
+parenType
+input: ParenType
+return: Type
+description: Matches ParenType nodes.
+
+pointerType
+input: PointerType
+return: Type
+description: Matches pointer types, but does not match Objective-C object pointer types.
+
+rValueReferenceType
+input: RValueReferenceType
+return: Type
+description: Matches rvalue reference types.
+
+recordType
+input: RecordType
+return: Type
+description: Matches record types (e.g. structs, classes).
+
+referenceType
+input: ReferenceType
+return: Type
+description: Matches both lvalue and rvalue reference types.
+
+substTemplateTypeParmType
+input: SubstTemplateTypeParmType
+return: Type
+description: Matches types that represent the result of substituting a type for a template type parameter.
+
+tagType
+input: TagType
+return: Type
+description: Matches tag types (record and enum types).
+
+templateSpecializationType
+input: TemplateSpecializationType
+return: Type
+description: Matches template specialization types.
+
+templateTypeParmType
+input: TemplateTypeParmType
+return: Type
+description: Matches template type parameter types.
+
+type
+input: Type
+return: Type
+description: Matches Types in the clang AST.
+
+typedefType
+input: TypedefType
+return: Type
+description: Matches typedef types.
+
+unaryTransformType
+input: UnaryTransformType
+return: Type
+description: Matches types nodes representing unary type transformations.
+
+variableArrayType
+input: VariableArrayType
+return: Type
+description: Matches C arrays with a specified size that is not an integer-constant-expression.
+
+eachOf
+input: Matcher<*>, ..., Matcher<*>
+return: Matcher<*>
+description: Matches if any of the given matchers matches.
+
+forEachDescendant
+input: Matcher<*>
+return: Matcher<*>
+description: Matches AST nodes that have descendant AST nodes that match the provided matcher.
+
+forEach
+input: Matcher<*>
+return: Matcher<*>
+description: Matches AST nodes that have child AST nodes that match the provided matcher.
+
+hasAncestor
+input: Matcher<*>
+return: Matcher<*>
+description: Matches AST nodes that have an ancestor that matches the provided matcher.
+
+hasDescendant
+input: Matcher<*>
+return: Matcher<*>
+description: Matches AST nodes that have descendant AST nodes that match the provided matcher.
+
+has
+input: Matcher<*>
+return: Matcher<*>
+description: Matches AST nodes that have child AST nodes that match the provided matcher.
+
+hasParent
+input: Matcher<*>
+return: Matcher<*>
+description: Matches AST nodes that have a parent that matches the provided matcher.
+
+hasCondition
+input: Expr
+return: AbstractConditionalOperator
+description: Matches the condition expression of an if statement, for loop, switch statement or conditional operator.
+
+hasFalseExpression
+input: Expr
+return: AbstractConditionalOperator
+description: Matches the false branch expression of a conditional operator (binary or ternary).
+
+hasTrueExpression
+input: Expr
+return: AbstractConditionalOperator
+description: Matches the true branch expression of a conditional operator.
+
+hasDeclaration
+input: Decl
+return: AddrLabelExpr
+description: Matches a node if the declaration associated with that node matches the given matcher. If the node declares the given matcher. declare.
+
+hasBase
+input: Expr
+return: ArraySubscriptExpr
+description: Matches the base expression of an array subscript expression.
+
+hasIndex
+input: Expr
+return: ArraySubscriptExpr
+description: Matches the index expression of an array subscript expression.
+
+hasLHS
+input: Expr
+return: ArraySubscriptExpr
+description: Matches the left hand side of binary operator expressions.
+
+hasRHS
+input: Expr
+return: ArraySubscriptExpr
+description: Matches the right hand side of binary operator expressions.
+
+hasElementTypeLoc
+input: TypeLoc
+return: ArrayTypeLoc
+description: Matches arrays and C99 complex types that have a specific element type.
+
+hasElementType
+input: Type
+return: ArrayType
+description: Matches arrays and C99 complex types that have a specific element type.
+
+hasValueTypeLoc
+input: TypeLoc
+return: AtomicTypeLoc
+description: Matches atomic types with a specific value type.
+
+hasValueType
+input: Type
+return: AtomicType
+description: Matches atomic types with a specific value type.
+
+hasDeducedType
+input: Type
+return: AutoType
+description: Matches AutoType nodes where the deduced type is a specific type.
+
+hasEitherOperand
+input: Expr
+return: BinaryOperator
+description: Matches if either the left hand side or the right hand side of a binary operator matches.
+
+hasLHS_c
+input: Expr
+return: BinaryOperator
+description: Matches the left hand side of binary operator expressions.
+
+hasRHS_c
+input: Expr
+return: BinaryOperator
+description: Matches the right hand side of binary operator expressions.
+
+hasAnyParameter
+input: ParmVarDecl
+return: BlockDecl
+description: Matches any parameter of a function or an ObjC method declaration or a block.
+
+hasParameter
+input: ParmVarDecl
+return: BlockDecl
+description: Matches the n'th parameter of a function or an ObjC method declaration or a block.
+
+pointeeLoc
+input: TypeLoc
+return: BlockPointerTypeLoc
+description: Narrows PointerType (and similar) matchers to those where the pointee matches a given matcher.
+
+pointee
+input: Type
+return: BlockPointerType
+description: Narrows PointerType (and similar) matchers to those where the pointee matches a given matcher.
+
+forEachArgumentWithParam
+input: Expr, ParmVarDecl
+return: CXXConstructExpr
+description: Matches all arguments and their respective ParmVarDecl.
+
+hasAnyArgument
+input: Expr
+return: CXXConstructExpr
+description: Matches any argument of a call  or a constructor call , or an ObjC-message-send.
+
+hasArgument
+input: Expr
+return: CXXConstructExpr
+description: Matches the n'th argument of a call or a constructor call . has argument
+
+hasDeclaration_c
+input: Decl
+return: CXXConstructExpr
+description: Matches a node if the declaration associated with that node matches the given matcher. declare.
+
+forEachConstructorInitializer
+input: CXXCtorInitializer
+return: CXXConstructorDecl
+description: Matches each constructor initializer in a constructor definition.
+
+hasAnyConstructorInitializer
+input: CXXCtorInitializer
+return: CXXConstructorDecl
+description: Matches a constructor initializer.
+
+forField
+input: FieldDecl
+return: CXXCtorInitializer
+description: Matches the field declaration of a constructor initializer.
+
+withInitializer
+input: Expr
+return: CXXCtorInitializer
+description: Matches the initializer expression of a constructor initializer.
+
+hasObjectExpression
+input: Expr
+return: CXXDependentScopeMemberExpr
+description: Matches a member expression where the object expression is matched by a given matcher. Matches member expressions that have object expression
+
+hasBody
+input: Stmt
+return: CXXForRangeStmt
+description: Matches a 'for', 'while', 'do while' statement or a function definition that has a given body.
+
+hasLoopVariable
+input: VarDecl
+return: CXXForRangeStmt
+description: Matches the initialization statement of a for loop.
+
+hasRangeInit
+input: Expr
+return: CXXForRangeStmt
+description: Matches the range initialization statement of a for loop.
+
+onImplicitObjectArgument
+input: Expr
+return: CXXMemberCallExpr
+description: 
+
+on
+input: Expr
+return: CXXMemberCallExpr
+description: Matches on the implicit object argument.
+
+thisPointerType
+input: Decl
+return: CXXMemberCallExpr
+description: Overloaded to match the type's declaration.
+
+thisPointerType_c
+input: QualType
+return: CXXMemberCallExpr
+description: Matches if the expression's type either matches the specified matcher, or is a pointer to a type that matches the InnerMatcher.
+
+forEachOverridden
+input: CXXMethodDecl
+return: CXXMethodDecl
+description: Matches each method overridden by the given method. This matcher may produce multiple matches.
+
+ofClass
+input: CXXRecordDecl
+return: CXXMethodDecl
+description: Matches the class declaration that the given method declaration belongs to.
+
+hasArraySize
+input: Expr
+return: CXXNewExpr
+description: Matches array new expressions with a given array size.
+
+hasDeclaration_c_c
+input: Decl
+return: CXXNewExpr
+description: Matches a node if the declaration associated with that node matches the given matcher. declare.
+
+hasMethod
+input: CXXMethodDecl
+return: CXXRecordDecl
+description: Matches the first method of a class or struct that satisfies InnerMatcher.
+
+isDerivedFrom_c
+input: NamedDecl
+return: CXXRecordDecl
+description: Matches C++ classes that are directly or indirectly derived from a class matching Base.
+
+isSameOrDerivedFrom_c
+input: NamedDecl
+return: CXXRecordDecl
+description: Similar to isDerivedFrom(), but also matches classes that directly match Base.
+
+hasAnyArgument_c
+input: Expr
+return: CXXUnresolvedConstructExpr
+description: Matches any argument of a call or a constructor call, or an ObjC-message-send.
+
+callee
+input: Decl
+return: CallExpr
+description: Matches if the call callee's declaration matches the given matcher.
+
+callee_c
+input: Stmt
+return: CallExpr
+description: Matches if the call callee expression matches.
+
+forEachArgumentWithParam_c
+input: Expr, ParmVarDecl
+return: CallExpr
+description: Matches all arguments and their respective ParmVarDecl.
+
+hasAnyArgument_c_c
+input: Expr
+return: CallExpr
+description: Matches any argument of a call or a constructor call, or an ObjC-message-send.
+
+hasArgument_c
+input: Expr
+return: CallExpr
+description: Matches the n'th argument of a call or a constructor call. has argument
+
+hasDeclaration_c_c_c
+input: Decl
+return: CallExpr
+description: Matches a node if the declaration associated with that node matches the given matcher. declare.
+
+hasCaseConstant
+input: Expr
+return: CaseStmt
+description: Matches the constant given in the statement.
+
+hasSourceExpression
+input: Expr
+return: CastExpr
+description: Matches if the cast's source expression or opaque value's source expression matches the given matcher.
+
+hasAnyTemplateArgument
+input: TemplateArgument
+return: ClassTemplateSpecializationDecl
+description: Matches classTemplateSpecializations, templateSpecializationType and functionDecl that have at least one TemplateArgument matching the given InnerMatcher.
+
+hasSpecializedTemplate
+input: ClassTemplateDecl
+return: ClassTemplateSpecializationDecl
+description: Matches the specialized template of a specialization declaration.
+
+hasTemplateArgument
+input: TemplateArgument
+return: ClassTemplateSpecializationDecl
+description: Matches classTemplateSpecializations, templateSpecializationType and functionDecl where the n'th TemplateArgument matches the given InnerMatcher.
+
+hasElementTypeLoc_c
+input: TypeLoc
+return: ComplexTypeLoc
+description: Matches arrays and C99 complex types that have a specific element type.
+
+hasElementType_c
+input: Type
+return: ComplexType
+description: Matches arrays and C99 complex types that have a specific element type.
+
+hasAnySubstatement
+input: Stmt
+return: CompoundStmt
+description: Matches compound statements where at least one substatement matches a given matcher. Also matches StmtExprs that have CompoundStmt as children.
+
+hasDecayedType
+input: QualType
+return: DecayedType
+description: Matches the decayed type, whos decayed type matches InnerMatcher
+
+hasDeclaration_c_c_c_c
+input: Decl
+return: DeclRefExpr
+description: Matches a node if the declaration associated with that node matches the given matcher. declare
+
+throughUsingDecl
+input: UsingShadowDecl
+return: DeclRefExpr
+description: Matches a DeclRefExpr that refers to a declaration through a specific using shadow declaration.
+
+to
+input: Decl
+return: DeclRefExpr
+description: Matches a DeclRefExpr that refers to a declaration that matches the specified matcher.
+
+containsDeclaration
+input: Decl
+return: DeclStmt
+description: Matches the n'th declaration of a declaration statement.
+
+hasSingleDecl
+input: Decl
+return: DeclStmt
+description: Matches the Decl of a DeclStmt which has a single declaration.
+
+hasTypeLoc
+input: TypeLoc
+return: DeclaratorDecl
+description: Matches if the type location of the declarator decl's type matches the inner matcher.
+
+hasDeclContext
+input: Decl
+return: Decl
+description: Matches declarations whose declaration context, interpreted as a Decl, matches InnerMatcher.
+
+hasUnderlyingType
+input: Type
+return: DecltypeType
+description: Matches DecltypeType nodes to check the underlying type.
+
+hasBody_c
+input: Stmt
+return: DoStmt
+description: Matches a 'for', 'while', 'do while' statement or a function definition that has a given body.
+
+hasCondition_c
+input: Expr
+return: DoStmt
+description: Matches the condition expression of an if statement, for loop, switch statement or conditional operator.
+
+hasQualifier
+input: NestedNameSpecifier
+return: ElaboratedType
+description: Matches ElaboratedTypes whose qualifier, a NestedNameSpecifier, matches InnerMatcher if the qualifier exists.
+
+namesType
+input: QualType
+return: ElaboratedType
+description: Matches ElaboratedTypes whose named type matches InnerMatcher.
+
+hasDeclaration_c_c_c_c_c
+input: Decl
+return: EnumType
+description: Matches a node if the declaration associated with that node matches the given matcher. declare
+
+hasDestinationType
+input: QualType
+return: ExplicitCastExpr
+description: Matches casts whose destination type matches a given matcher.
+
+hasType
+input: Decl
+return: Expr
+description: Overloaded to match the declaration of the expression's or value declaration's type.
+
+hasType_c
+input: QualType
+return: Expr
+description: Matches if the expression's or declaration's type matches a type matcher.
+
+ignoringImpCasts
+input: Expr
+return: Expr
+description: Matches expressions that match InnerMatcher after any implicit casts are stripped off.
+
+ignoringImplicit
+input: Expr
+return: Expr
+description: Matches expressions that match InnerMatcher after any implicit AST nodes are stripped off.
+
+ignoringParenCasts
+input: Expr
+return: Expr
+description: Matches expressions that match InnerMatcher after parentheses and casts are stripped off.
+
+ignoringParenImpCasts
+input: Expr
+return: Expr
+description: Matches expressions that match InnerMatcher after implicit casts and parentheses are stripped off.
+
+hasInClassInitializer
+input: Expr
+return: FieldDecl
+description: Matches non-static data members that have an in-class initializer.
+
+hasBody_c_c
+input: Stmt
+return: ForStmt
+description: Matches a 'for', 'while', 'do while' statement or a function definition that has a given body.
+
+hasCondition_c_c
+input: Expr
+return: ForStmt
+description: Matches the condition expression of an if statement, for loop, switch statement or conditional operator.
+
+hasIncrement
+input: Stmt
+return: ForStmt
+description: Matches the increment statement of a for loop.
+
+hasLoopInit
+input: Stmt
+return: ForStmt
+description: Matches the initialization statement of a for loop.
+
+hasType_c_c
+input: Decl
+return: FriendDecl
+description: Overloaded to match the declaration of the expression's or value declaration's type.
+
+hasType_c_c_c
+input: QualType
+return: FriendDecl
+description: Matches if the expression's or declaration's type matches a type matcher.
+
+hasAnyParameter_c
+input: ParmVarDecl
+return: FunctionDecl
+description: Matches any parameter of a function or an ObjC method declaration or a block.
+
+hasAnyTemplateArgument_c
+input: TemplateArgument
+return: FunctionDecl
+description: Matches classTemplateSpecializations, templateSpecializationType and functionDecl that have at least one TemplateArgument matching the given InnerMatcher.
+
+hasBody_c_c_c
+input: Stmt
+return: FunctionDecl
+description: Matches a 'for', 'while', 'do while' statement or a function definition that has a given body.
+
+hasParameter_c
+input: ParmVarDecl
+return: FunctionDecl
+description: Matches the n'th parameter of a function or an ObjC method declaration or a block.
+
+hasTemplateArgument_c
+input: TemplateArgument
+return: FunctionDecl
+description: Matches classTemplateSpecializations, templateSpecializationType and functionDecl where the n'th TemplateArgument matches the given InnerMatcher.
+
+returns
+input: QualType
+return: FunctionDecl
+description: Matches the return type of a function declaration.
+
+hasCondition_c_c_c
+input: Expr
+return: IfStmt
+description: Matches the condition expression of an if statement, for loop, switch statement or conditional operator.
+
+hasConditionVariableStatement
+input: DeclStmt
+return: IfStmt
+description: Matches the condition variable statement in an if statement.
+
+hasElse
+input: Stmt
+return: IfStmt
+description: Matches the elsestatement of an if statement. Matches has else. have else.
+
+hasThen
+input: Stmt
+return: IfStmt
+description: Matches the then statement of an if statement.
+
+hasImplicitDestinationType
+input: QualType
+return: ImplicitCastExpr
+description: Matches implicit casts whose destination type matches a given matcher.
+
+hasSyntacticForm
+input: Expr
+return: InitListExpr
+description: Matches the syntactic form of init list expressions (if expression have it).
+
+hasDeclaration_c_c_c_c_c_c
+input: Decl
+return: InjectedClassNameType
+description: Matches a node if the declaration associated with that node matches the given matcher. declare
+
+hasDeclaration_c_c_c_c_c_c_c
+input: Decl
+return: LabelStmt
+description: Matches a node if the declaration associated with that node matches the given matcher. declare
+
+hasDeclaration_c_c_c_c_c_c_c_c
+input: Decl
+return: MemberExpr
+description: Matches a node if the declaration associated with that node matches the given matcher. declare
+
+hasObjectExpression_c
+input: Expr
+return: MemberExpr
+description: Matches a member expression where the object expression is matched by a given matcher. Matches member expressions that have object expression
+
+member
+input: ValueDecl
+return: MemberExpr
+description: Matches a member expression where the member is matched by a given matcher.
+
+pointeeLoc_c
+input: TypeLoc
+return: MemberPointerTypeLoc
+description: Narrows PointerType (and similar) matchers to those where the pointee matches a given matcher.
+
+pointee_c
+input: Type
+return: MemberPointerType
+description: Narrows PointerType (and similar) matchers to those where the pointee matches a given matcher.
+
+hasUnderlyingDecl
+input: NamedDecl
+return: NamedDecl
+description: Matches a NamedDecl whose underlying declaration matches the given matcher.
+
+hasPrefix
+input: NestedNameSpecifierLoc
+return: NestedNameSpecifierLoc
+description: Matches on the prefix of a NestedNameSpecifierLoc.
+
+specifiesTypeLoc
+input: TypeLoc
+return: NestedNameSpecifierLoc
+description: Matches nested name specifier locs that specify a type matching the given TypeLoc.
+
+hasPrefix_c
+input: NestedNameSpecifier
+return: NestedNameSpecifier
+description: Matches on the prefix of a NestedNameSpecifier.
+
+specifiesNamespace
+input: NamespaceDecl
+return: NestedNameSpecifier
+description: Matches nested name specifiers that specify a namespace matching the given namespace matcher.
+
+specifiesType
+input: QualType
+return: NestedNameSpecifier
+description: Matches nested name specifiers that specify a type matching the given QualType matcher without qualifiers.
+
+hasAnyArgument_c_c_c
+input: Expr
+return: ObjCMessageExpr
+description: Matches any argument of a call or a constructor call, or an ObjC-message-send.
+
+hasArgument_c_c
+input: Expr
+return: ObjCMessageExpr
+description: Matches the n'th argument of a call or a constructor call. has argument
+
+hasReceiver
+input: Expr
+return: ObjCMessageExpr
+description: Matches if the Objective-C message is sent to an instance, and the inner matcher matches on that instance.
+
+hasReceiverType
+input: QualType
+return: ObjCMessageExpr
+description: Matches on the receiver of an ObjectiveC Message expression.
+
+hasAnyParameter_c_c
+input: ParmVarDecl
+return: ObjCMethodDecl
+description: Matches any parameter of a function or an ObjC method declaration or a block.
+
+hasParameter_c_c
+input: ParmVarDecl
+return: ObjCMethodDecl
+description: Matches the n'th parameter of a function or an ObjC method declaration or a block.
+
+hasSourceExpression_c
+input: Expr
+return: OpaqueValueExpr
+description: Matches if the cast's source expression or opaque value's source expression matches the given matcher.
+
+hasAnyDeclaration
+input: Decl
+return: OverloadExpr
+description: Matches an OverloadExpr if any of the declarations in the set of overloads matches the given matcher.
+
+innerType
+input: Type
+return: ParenType
+description: Matches ParenType nodes where the inner type is a specific type.
+
+pointeeLoc_c_c
+input: TypeLoc
+return: PointerTypeLoc
+description: Narrows PointerType (and similar) matchers to those where the pointee matches a given matcher.
+
+pointee_c_c
+input: Type
+return: PointerType
+description: Narrows PointerType (and similar) matchers to those where the pointee matches a given matcher.
+
+hasCanonicalType
+input: QualType
+return: QualType
+description: Matches QualTypes whose canonical type matches InnerMatcher.
+
+hasDeclaration_c_c_c_c_c_c_c_c_c
+input: Decl
+return: QualType
+description: Matches a node if the declaration associated with that node matches the given matcher. declare
+
+ignoringParens
+input: QualType
+return: QualType
+description: Matches types that match InnerMatcher after any parens are stripped.
+
+pointsTo
+input: Decl
+return: QualType
+description: Overloaded to match the pointee type's declaration.
+
+pointsTo_c
+input: QualType
+return: QualType
+description: Matches if the matched type is a pointer type and the pointee type matches the specified matcher.
+
+references
+input: Decl
+return: QualType
+description: Overloaded to match the referenced type's declaration.
+
+references_c
+input: QualType
+return: QualType
+description: Matches if the matched type is a reference type and the referenced type matches the specified matcher.
+
+hasDeclaration_c_c_c_c_c_c_c_c_c_c
+input: Decl
+return: RecordType
+description: Matches a node if the declaration associated with that node matches the given matcher. declare
+
+pointeeLoc_c_c_c
+input: TypeLoc
+return: ReferenceTypeLoc
+description: Narrows PointerType (and similar) matchers to those where the pointee matches a given matcher.
+
+pointee_c_c_c
+input: Type
+return: ReferenceType
+description: Narrows PointerType (and similar) matchers to those where the pointee matches a given matcher.
+
+hasReturnValue
+input: Expr
+return: ReturnStmt
+description: Matches the return value expression of a return statement
+
+hasAnySubstatement_c
+input: Stmt
+return: StmtExpr
+description: Matches compound statements where at least one substatement matches a given matcher. Also matches StmtExprs that have CompoundStmt as children.
+
+alignOfExpr
+input: UnaryExprOrTypeTraitExpr
+return: Stmt
+description: Same as unaryExprOrTypeTraitExpr, but only matching alignof.
+
+forFunction
+input: FunctionDecl
+return: Stmt
+description: Matches declaration of the function the statement belongs to
+
+sizeOfExpr
+input: UnaryExprOrTypeTraitExpr
+return: Stmt
+description: Same as unaryExprOrTypeTraitExpr, but only matching sizeof.
+
+hasReplacementType
+input: Type
+return: SubstTemplateTypeParmType
+description: Matches template type parameter substitutions that have a replacement type that matches the provided matcher.
+
+forEachSwitchCase
+input: SwitchCase
+return: SwitchStmt
+description: Matches each case or default statement belonging to the given switch statement. This matcher may produce multiple matches.
+
+hasCondition_c_c_c_c
+input: Expr
+return: SwitchStmt
+description: Matches the condition expression of an if statement, for loop, switch statement or conditional operator.
+
+hasDeclaration_c_c_c_c_c_c_c_c_c_c_c
+input: Decl
+return: TagType
+description: Matches a node if the declaration associated with that node matches the given matcher. declare
+
+isExpr
+input: Expr
+return: TemplateArgument
+description: Matches a sugar TemplateArgument that refers to a certain expression.
+
+refersToDeclaration
+input: Decl
+return: TemplateArgument
+description: Matches a canonical TemplateArgument that refers to a certain declaration.
+
+refersToIntegralType
+input: QualType
+return: TemplateArgument
+description: Matches a TemplateArgument that referes to an integral type.
+
+refersToTemplate
+input: TemplateName
+return: TemplateArgument
+description: Matches a TemplateArgument that refers to a certain template.
+
+refersToType
+input: QualType
+return: TemplateArgument
+description: Matches a TemplateArgument that refers to a certain type.
+
+hasAnyTemplateArgument_c_c
+input: TemplateArgument
+return: TemplateSpecializationType
+description: Matches classTemplateSpecializations, templateSpecializationType and functionDecl that have at least one TemplateArgument matching the given InnerMatcher.
+
+hasDeclaration_c_c_c_c_c_c_c_c_c_c_c_c
+input: Decl
+return: TemplateSpecializationType
+description: Matches a node if the declaration associated with that node matches the given matcher. declare
+
+hasTemplateArgument_c_c
+input: TemplateArgument
+return: TemplateSpecializationType
+description: Matches classTemplateSpecializations, templateSpecializationType and functionDecl where the n'th TemplateArgument matches the given InnerMatcher.
+
+hasDeclaration_c_c_c_c_c_c_c_c_c_c_c_c_c
+input: Decl
+return: TemplateTypeParmType
+description: Matches a node if the declaration associated with that node matches the given matcher. declare
+
+findAll
+input: const Matcher<T>  Matcher
+return: Matcher<T>
+description: Matches if the node or any descendant matches.
+
+hasType_c_c_c_c
+input: QualType
+return: TypedefNameDecl
+description: Matches if the expression's or declaration's type matches a type matcher.
+
+hasDeclaration_c_c_c_c_c_c_c_c_c_c_c_c_c_c
+input: Decl
+return: TypedefType
+description: Matches a node if the declaration associated with that node matches the given matcher. declare
+
+hasUnqualifiedDesugaredType
+input: Type
+return: Type
+description: Matches if the matched type matches the unqualified desugared type of the matched node.
+
+hasArgumentOfType
+input: QualType
+return: UnaryExprOrTypeTraitExpr
+description: Matches unary expressions that have a specific type of argument.
+
+hasUnaryOperand
+input: Expr
+return: UnaryOperator
+description: Matches if the operand of a unary operator matches.
+
+hasObjectExpression_c_c
+input: Expr
+return: UnresolvedMemberExpr
+description: Matches a member expression where the object expression is matched by a given matcher.
+
+hasDeclaration_c_c_c_c_c_c_c_c_c_c_c_c_c_c_c
+input: Decl
+return: UnresolvedUsingType
+description: Matches a node if the declaration associated with that node matches the given matcher. declare
+
+hasAnyUsingShadowDecl
+input: UsingShadowDecl
+return: UsingDecl
+description: Matches any using shadow declaration.
+
+hasTargetDecl
+input: NamedDecl
+return: UsingShadowDecl
+description: Matches a using shadow declaration where the target declaration is matched by the given matcher.
+
+hasType_c_c_c_c_c
+input: Decl
+return: ValueDecl
+description: Overloaded to match the declaration of the expression's or value declaration's type.
+
+hasType_c_c_c_c_c_c
+input: QualType
+return: ValueDecl
+description: Matches if the expression's or declaration's type matches a type matcher.
+
+hasInitializer
+input: Expr
+return: VarDecl
+description: Matches a declaration that has an initializer expression that matches the given matcher. Matches variable declarations that initialize the given matcher.
+
+hasSizeExpr
+input: Expr
+return: VariableArrayType
+description: Matches VariableArrayType nodes that have a specific size expression.
+
+hasBody_c_c_c_c
+input: Stmt
+return: WhileStmt
+description: Matches a 'for', 'while', 'do while' statement or a function definition that has a given body.
+
+hasCondition_c_c_c_c_c
+input: Expr
+return: WhileStmt
+description: Matches the condition expression of an if statement, for loop, switch statement or conditional operator.
+
+loc
+input: NestedNameSpecifier
+return: NestedNameSpecifierLoc
+description: Matches NestedNameSpecifierLocs for which the given inner NestedNameSpecifier-matcher matches.
+
+loc_c
+input: QualType
+return: TypeLoc
+description: Matches TypeLocs for which the given inner QualType-matcher matches.
+

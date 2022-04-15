@@ -1,0 +1,90 @@
+name:	convertJSON_to_CSV
+type:
+return: dataset_csv
+argument:	file
+prereq:
+method:
+description: convert json file to csv
+
+name:	MergeDataset
+type:
+return: mergedata_csv
+argument:	file, file
+prereq:
+method:
+description: merge two files , merge two datasets
+
+
+name:	Multiplication
+type:
+return: columnMultiplication_csv
+argument:	columnName, columnName, file
+prereq:
+method:
+description: get multiplication of the columns from dataset file
+
+
+name:	GetColumnNames
+type:
+return: empty
+argument:	file
+prereq:
+method:
+description: get list of columns from the file
+
+name:	GetColumn
+type:
+return: extractedColumn_csv
+argument:	columnName, programName, machineName, file
+prereq:
+method:
+description: get column from the dataset
+
+
+name:	columnName
+type:   keyword_arg
+return:	columnName
+argument:	string
+prereq:
+method:
+description: columnName
+
+name:	file
+type: keyword_arg
+return:	file
+argument:	string
+prereq:
+method:
+description: from file, file
+
+name: hpc_arg
+type:
+input: hpc_arg
+return:
+description: hpc_arg
+
+name: hpc_concept
+type:
+input: hpc_concept
+return:
+description: hpc_concept
+
+name:	programName
+type: keyword_arg
+return:	programName
+argument:	hpc_arg
+prereq:
+method:
+description: programName
+
+
+name:	machineName
+type: keyword_arg
+return:	machineName
+argument:	hpc_arg
+prereq:
+method:
+description: machineName
+
+
+

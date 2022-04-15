@@ -1,0 +1,50 @@
+_query               :=  _object
+
+# Leading "_" will denote NT node. This isn't used by HISyn, but is for my own organization
+_object         :=  _linear_regression
+
+_linear_regression  :=   LinearRegression(_fit_intercept, _normalize, _copy_X, _n_jobs, _positive)._lr_methods
+
+# Tailing "_key_" will denote api nodes which will be treated as key of keyword arg
+_fit_intercept       :=  empty
+                        | fit_intercept_key_(_bool)
+
+_normalize           := empty
+                    | normalize_key_(_bool)
+
+_copy_X              :=  empty
+                     |   copy_X_key_(_bool)  
+
+_n_jobs              := empty
+                        | n_jobs_key_(python_int)
+
+_positive            :=  empty
+                        | positive_key_(_bool)
+
+# Leading and Tailing "_" without "imp" will denote api nodes whose parentheses need to be removed
+_bool              :=  _True_()
+                    |   _False_()
+
+_lr_methods          :=  empty
+                    |   fit(_X, _y, _sample_weight)
+                    |   predict(_X)
+                    |   get_params(_deep)
+                    |   score(_X, _y, _sample_weight)
+                    |   set_params(_fit_intercept, _normalize, _copy_X, _n_jobs, _positive)
+
+_deep           :=  empty
+                |    deep_key_(_bool)
+
+_X                  := X_key_(_array_like)
+
+_y                  :=  y_key_(_array_like)
+
+
+# TODO: would this break the grammar parsing, with "." being a special character for object methods? or is it handles as part of first command string if *before* parentheses?
+_array_like         := np.array(python_list)
+
+
+
+_sample_weight      :=  None
+                    |   _sample_weight_key_(_array_like)
+

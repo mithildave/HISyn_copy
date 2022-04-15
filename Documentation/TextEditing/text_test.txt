@@ -1,0 +1,467 @@
+Insert ":" after #1st word
+Insert a ":" immediately after a sequence of numbers
+Insert ":" before every #1st word
+Put ":" before the #1st " " in every line
+Enter ":" before " "
+Put ":" before the #1st " " in every line
+Enter ":" before " "
+put ":" before a " "
+put ":" after the #1st word
+Insert ":" after the integer in each line
+Replace " " by ":" and " "
+put ":" after every numeral in every line
+after #1st word put ":"
+Insert a ":" after the #1st word in every line
+insert ":" before #1st " "
+Insert a ":" after numbers in each line
+insert a ":" after #1st numeric letter
+Add a ":" after the number
+Append a ":" after an integer
+Insert ":" after #1st word of the sentence
+Insert ":" after the word that starts with "Day"
+Insert ":" in every line after the numbers
+Insert "| " after the #1st occurrence of " "
+Insert a "|" and a " " before the #1st word in every line
+for each line, put a "|" before the #1st word of the line
+add "|" before #1st word
+add a "|" character before the #1st word
+put "| " before #1st " "
+put "|" before the #1st word
+Add "| " to the beginning of the #1st word
+insert "|" followed by a " " before the #1st word in each line
+insert "| " just before the #1st word
+prepend each line with "NM-"
+Add "NM-" to the beginning of each line
+Add "NM-" to the beginning of every sentence
+Add the string "NM-" at the beginning of every line
+Insert "NM-" to the beginning of each line
+Add "NM-" to every new line
+Add "NM-" as prefix to every line
+place "NM-" before every line
+insert "NM-" before each line
+At the starting of every line, add "NM-"
+Insert "NM-" in the beginning of each line
+Insert "NM-" at the starting of each line
+Insert "NM-" in the beginning in every line
+Insert "NM-" to the beginning of each line
+Insert "NM-" before each line
+insert "NM-" before every line
+Append "NM-" at the start of all lines
+Insert "NM-" before #1st letter in every line
+Add "NM-" at the starting of each statement
+Add "NM-" to the start of every string
+add "NM-" in the beginning of each line
+insert text "NM-" in the starting of every line
+Insert "NM-" before every line
+Add "NM-" before all strings
+Insert "NM-" in front of every line
+Add "NM-" in all the #4 lines before the occurrence of "Com"
+add "NM-" at the start of the lines
+Prefix "NM-" to the beginning
+append "NM-" to the beginning
+Append "NM-"
+Append "NM-" to the beginning
+Insert "NM-" at the beginning of all lines
+Add "$" at the beginning of those lines that do not already start with "$"
+If a sentence does not start with "$" then insert "$" at its beginning.
+If a line does not start with a "$" add a "$" at its beginning
+except line #2nd and #6th, insert "$" in starting of every line
+Insert "$" before every line that does not start with "$".
+Add "$" at the beginning of all the sentences in A which do not start with "$"
+Insert "$" in all lines at the beginning not starting with "$"
+Insert "$" before each line not starting with "$"
+Insert "$" in all lines at the beginning not starting with "$"
+Insert "$" before each line not starting with "$"
+Insert "$" before every line that does not starts with "$"
+Add "$" at the beginning of each statement if "$" is not present.
+add "$" in the beginning of all the lines wherever "$" is not present.
+insert "$" at the starting of every line except #2nd and #1st line
+Insert "$" in every line not starting with "$"
+Insert "$" in every line whose starting is not a "$" already
+Put "$" in the start of each line if it has no "$" at the start
+if statement does not starts with "$" add "$" in the beginning
+Prepend the line containing "P.O. BOX" with "*"
+Add "*" at the beginning of every sentence containing the word "Box"
+add "*" in the start of line that contains "P.O."
+Add a "*" at the beginning of the line in which the string "P.O. BOX" occurs
+Put "*" at the beginning of #2nd, #6th, #8th, #13th line
+put a "*" before each line that has "P.O. BOX" embedded within it
+Put "*" in front of lines with "P.O. Box" as a substring
+insert "*" before every line that starts with "P"
+insert "*" before the lines that starts with "1" or starts with "C"
+Insert "*" at the beginning of each line containing "P.O. BOX"
+Insert "*" at the start of every line which has "P.O.BOX" word
+Insert "*" before every line that has the occurrence of "P.O.BOX"
+Add "*" in the beginning of the line which contains "P.O. BOX"
+add "*" in beginning of all the lines wherever "P.O. BOX" is present
+insert a "*" at the beginning in the sentence which has "P.O.BOX" in it
+insert "*" at the start of the sentence where the sentence consists of "P.O."
+Insert "*" in front of every line containing "P.O. BOX" in it
+add "*" at the start of every line which has the word "P.O.BOX"
+Put "*" at the start of those line which contain "P.O.BOX"
+if sentence contain "P.O." as a substring add "*" before the sentence
+add "-- from Bill" to each line that starts with "Exercise"
+Add " -- from Bill" to the end of every sentence ending with a digit.
+In every line beginning with "Exercise", append "-- from Bill" towards the end.
+Add the string " -- from Bill" at the end of every line which contains a "H".
+if line begins with "Exercise H", put "--from Bill" at the end of line
+Append "-- from Bill" in every line containing numerals
+Insert "--from Bill" at the end of each line which does not end with "."
+add "--from Bill" in every #2 lines starting from the #1st
+If sentence start from "Exercise" then at the end add "-- from Bill"
+Insert "-- from Bill" at the end of every line which starts with "Exercise"
+Append " -- from Bill" in every line starting with "Exercise"
+Add "--from Bill" at the end of line which has "%%" character
+if Sentence starts with "Exercise", add "--from Bill" after #14 characters
+Append "-- from Bill" in every #2 lines.
+Add " -- from Bill" to the end of every statement starting with "Exercise %%"
+Insert "..???" at the end of lines #2, #4, #6 and #8
+Add the string "..???" at the end of every #2nd line.
+In the every #2 lines, add "..???"
+At the end of every #2nd line, add "..???"
+Insert "..???" in every #2 lines at last
+Add "..???" at the last of every #2nd statement
+Put "..???" in every #2 lines
+Insert "..???" at the end of every #2 lines
+insert "..???" after ending of every #2 lines
+Insert ".." and "???" in every #2nd line
+Insert "...???" at the end of every #2nd line starting from the #2nd line.
+Insert "..???" at the end of line in every #2nd line
+put "..???" at the end of every #2 coming lines
+Suffix every #2 line with "..???"
+Replace "St." with "Street"
+Replace "St." wherever it occurs with "Street"
+Replace all the occurrences of "St." with "Street"
+For each line, if it ends with "St.", replace "St." by "Street"
+replace "St." to "street" in #4th , #6th and #7th line
+convert the string "St." to "Street" in every line
+Convert all "St." to "Street"
+Replace "St." by "Street"
+Convert "St." to "Street" at the end of #4th , #6th and #7th line
+replace "St." with the word "Street"
+replace "to" with "for"
+replace "to" with "for" in each sentence
+replace the text in between "L" and "R" by "details"
+Replace the text inside "L" and "R" with "details"
+Replace the text between "L" and "R" with the word "details"
+Replace the contents in between "L" and "R" with "details"
+For every line, remove the number between "-" and "-"
+Eliminate all the characters between "-" and "-"
+Remove #4th, #5th and #6th digits from all lines
+Remove #2nd number from each line
+delete the #2nd number from each line.
+Remove the words that are between "-" and "-"
+remove "L" and remove "R"
+remove all "L" and remove all "R"
+for each line, remove the "L" and remove "R"
+remove "L" and remove "R" from each line
+Eliminate the characters #1st, #5th, #6th and #10th from all the lines.
+Remove Numbers
+remove only the numeric characters.
+Remove the #1st word of the line which starts with a number
+Remove the numbers from all lines except the #2nd one
+remove digits in each line
+remove numbers from each line except line #2
+Remove the numbers from the lines
+Remove all the numerals from every line.
+Remove numbers from all sentences in A
+Remove all the numerals from every line.
+Remove numbers from all sentences in A
+Drop all numbers.
+Remove numeric values from all the lines
+if any word have digits at the beginning of it then remove digits
+remove digits from sentence
+Remove all the numbers from each line
+remove digits from #1st #3rd and #4th line
+Remove the numbers from each line
+Remove all the digits
+Delete all the numeric part of the text
+Remove the numbers from all the lines
+Remove the line containing "St" or containing "Lane" except the #1st line
+Remove the sentence if it does not contain the string "Cent"
+Remove line #3rd and #4th
+Remove the #3rd and #4th line
+Remove the sentences which does not contain "Cent" as its part
+Eliminate the #3rd and #4th line
+Eliminate the line which does not contain "Cent" in any word of the sentence
+Remove all lines which do not contain "Cent"
+Remove the line if it does not contain "cent" as a substring
+Delete those lines that do not contain "Cent"
+Remove all the characters after ";" in each sentence
+In each line remove all the characters after ";"
+Remove all text in a line starting from "//"
+In each line, remove everything after the ";"
+remove text beginning with "//"
+remove everything after endpoints ";"
+In every line, delete the text after "//"
+remove all the characters after ";" in all the lines
+Delete the text after symbol ";"
+remove anything that follows after ";"
+Remove all the words after the "//"
+Drop everything after ";" in each line
+In each line, remove the part after "//"
+In each line, remove the part after ";"
+Remove everything after ";" in each line.
+remove text after ";" from each line
+remove everything after ";" from the sentence
+in each line, remove everything after "//"
+Remove all text that is written after ";"
+remove everything after ";" till the end of the row
+Print everything before ";"
+Remove everything that comes after "//" in each line
+remove every character after "//"
+Remove the #1st character
+Remove #1st occurrence of "&" from the all of the above lines
+Remove the #1st "&" symbol from all the lines
+Remove the #1st character from every line
+Replace the #1st symbol "&" with "-" from every line
+if "&" occurs at the beginning of line remove "&"
+Remove #1st "&" from each line
+Remove #1st occurrence of "&" form every line left to right.
+Remove #1st character form every row in every line.
+Remove #1st "&" character from each line
+Eliminate the #1st character from all the lines
+delete #1st occurrence of "&" symbol
+Remove "&" before every line
+Remove every #1st occurrence of "&" from all the lines
+remove the #1st occurrence of character "&" in the text
+add "&"
+Remove the #1st occurrence of "&" in each line
+Remove #1st "&" from every line
+print everything between the occurrences of "--" and "--"
+Extract the word immediately following the #1st "--"
+extract all words that have "www" or have "com"
+Remove everything before "--"
+Extract everything immediately after "-- "
+Extract everything before next "--"
+Remove all empty lines.
+remove blank lines if any.
+Remove any empty line
+Remove the lines containing no characters.
+Remove Blank lines
+remove the empty line
+remove all the blank lines.
+Remove empty lines.
+Remove lines containing no characters.
+remove all blank lines.
+Remove the blank lines.
+Remove all the blank lines.
+Remove all the blank lines.
+Delete empty lines.
+Remove the "-" and remove the digits between "-" and "-"
+Remove all the "-" and remove the number between "-" and "-"
+Eliminate all the "-" and remove the characters between "-" and "-"
+Remove everything before "--".
+remove the "--"
+Extract everything immediately after "-- " and till next "--"
+Insert "     " at beginning of each line.
+Add a "<" and " " to each line.
+Add a "\n" after every nonblank line.
+Add "$nbsp;$nbsp;" at the beginning of every line that does not start with "<".
+Add a ":" after the #8th character in each line.
+If some line does not end with a ".", add "."
+Add the suffix "_IDM" to the word right after "idiom:"
+Add a "." at the end of any line which does not already have "."
+Add "/VB" at the end of the #1st word in each line.
+Next to the #1st character, add an "!"
+On every #2 lines, insert an "\t"
+Add an additional "\n" between line and line
+Add "," characters between number and number in the line
+Put "-" between number and number
+Append at the end of the line "THE END"
+Append "***" to the end of lines starting with "Fred"
+Add a "$" to the lines unless it already starts with a "$"
+Add "," to words
+Add an "!" followed by a "?" at the end of every word
+Add a ":" after the #80th character in each line
+Insert a "\n" above every line that matches "ABC"
+Insert above the #1st line the title "PERSONNEL FILE"
+Insert a "\n" after every #3 lines
+Attach "rfc" before all words including an "@"
+Place "," between word and word in each line
+After each instance of "href=", add "page="
+Insert "\n" between digit and digit
+Put a "\" before a current "\"
+Insert "\" right before opening "<"
+Place a " " between ";" and ";"
+Place "FINISH" at the end of line only if it does not already end with "FINISH"
+Insert "BEGIN" at the beginning of text
+Add "END" at the end of the file
+remove all instances of "|"
+Delete all blank lines
+Delete the last #2 lines of the input
+Remove all the lines between an occurrence of "start" and an occurrence of "stop"
+Remove every #3 occurrence of the word "Apple"
+Delete all consecutive blank lines from the input
+Delete the #1st number on all lines that start with a "%%"
+Remove the string " " from every line whose immediately following line is "INPUT"
+Delete the first #3 lines
+Delete all empty lines
+Delete every #4th line
+Remove "!" everywhere except in the lines between "start" and "stop"
+Delete every line that has a "," or has "and" in it
+Delete the last line of the input
+Remove all the #2nd fields ending in "500"
+Delete lines containing "Lane"
+Delete the #1st number on line #3
+Delete the #2nd field on each line
+Delete "<" from each line
+Delete lines that match regular expression pattern "ABC"
+Remove the last word
+Delete all consecutive blank lines from the input except the first #2
+Delete all blank lines from the input
+Remove a line containing "del"
+Remove a line ending with "&D"
+Remove the #2nd occurrence of a line ending in "c" from the file
+Delete the #1st and #3rd columns of the input
+delete the first #3 words
+Delete all digits in the #2nd word
+Delete " " between the word and "\r" of each sentence
+delete everything inside "<" and ">"
+Remove all blank lines between line and line
+Remove the terminal "/" on every line but the last #1
+Remove the #2nd instance of the line "The mulberry bush"
+Remove the "n" before an "e" or after an "o"
+remove all "." and remove all ","
+Eliminate the #1st number on each line
+Delete all but the #1st occurrence of "Cook"
+Delete the word "the" wherever it comes after "all"
+Remove all characters between "a" and "d" in the same word
+delete every line that contains "&" or contains word "and"
+Delete "Kookaburra" anywhere if it is followed by a ","
+Delete all empty lines
+Delete the last #10 lines of a file
+Delete every #8th line
+Remove text between "[img]" and "[/img]"
+Delete the character "a" unless it comes before an "r"
+Reject words which have numbercharacters in them
+Remove all symbols which are not numbers
+Delete the bottom #3 lines
+Remove lines having the character "$"
+Remove text after "." in each line
+Remove the word "sparkle" from the file
+Remove lines that begin with "ie6"
+Remove all spaces
+Remove blanklines before the nonblankline of text
+Remove "---" in the file.
+Remove "" and remove ""
+Remove lines that include the string "doesn't work"
+Ignore every word that contains digits from every #3rd line
+Replace every "++" with "+"
+Substitute  the #4th occurrence of "foo" with "bar" on each line
+Replace the line containing "Jose" with "JOSE HAS RETIRED"
+Substitute "A" with "a" in the first #3 line
+replace "a" with "b" in all lines
+Substitute "DOG" with "dog" in the last #2 lines
+replace all "," with "|"
+Replace every #2nd occurrence of "mutex->list" with "mutex->queue"
+Substitute "Cat" with "Dog" in all lines except the first #2 lines
+replace all whitespace gaps to a " "
+Replace every #3rd occurrence of the line "--------"  with a "\n"
+Substitute only the last occurrence of "foo" with "bar"
+Substitute "foo" with "bar" only on lines that do not contain "baz"
+Replace the first occurrence of "dog" in a line having "mouse" with an occurrence of "cat"
+Replace each occurrence of the number "92" with an "%%"
+Replace the "/" with a " "
+Replace "sq" with "dq"
+Replace all substrings "1250" by "120" unless the word starts with "run"
+Replace "<" with "-LRB-"
+Replace "!" with a "," and "\n"
+Change "day" to "night" in the input
+Change the name "Jon" to "Jonathan"
+Change every word on a line but the #3rd to "Deleted"
+Convert every " " into a "\n"
+Change all instances of "Mullberry Bush" to "mullberry bush."
+Substitute "Mary" with "John" in lines #2nd, #3rd, #4th and #5th
+In every line, replace the word next to "abc" by "Replaced"
+Replace any sequence of one or more whitespace except those anywhere inside "<" and ">" with a " "
+Replace "word" with "board" everywhere in the input
+Substitute "ABC" with "BCA"
+Replace every occurrence of ".." with "."
+Replace "&" with "&&" unless it is inside "'" and "'"
+Replace " " with ""
+Change all occurrences of "fontcolor" to "color"
+Replace "eregi" with "preg_match"
+Replace "enrol" with "enroll"
+Replace the #2nd word in each line with "TWO"
+Replace any word ending with ".com" with "WEBSITE"
+If "/start/here/" is at the beginning of the line, replace "/start/here/" with "/testdir/"
+Replace the word "10" with "ten"
+Replace " " with "break"
+Replace "'" with " "
+Replace all numbers with "*"
+Replace "f" with "//"
+Replace the word "pt" with "thousands"
+Replace the first "." in every line with a ":"
+Replace all characters immediately followed by "s" with "*"
+Replace words beginning with ""
+Replace text between "" and "" with "1"
+Change all words ending in ".jpg" to "REMOVED"
+Replace what is between "dq" and "dq" with "*"
+Print the lines after the word "SUBJECT:"
+Print the last field of the last line
+Search for lines that contain "0" or contains whitespaces
+list the #3rd field of those lines of the file in which the letter "r" appears
+Print the last #2 lines of a file
+Find everything between "<" and ">" and print it
+Print the last field of each line
+Print all words containing the "a" anywhere in the word
+Print a line if it contains "AAA" and contains "BBB" in any order
+print just the #4th field of the record ending in "\"
+Print everything between an occurrence of  "???" and "/???"
+Print line numbered #52
+Print lines containing "Lincoln" or containing "lincoln"
+Print out any input line that mentions "mark" and mentions "mary"
+List words ending in "x" or ending in "y"
+search the lines containing the word "WORD"
+List fields ending in "10" or ending in "11"
+Print the last line of a file
+Print all words beginning with "D"
+Print the #2nd word after pattern "ABC" on every line
+Print all lines ending in "700"
+Print all lines containing the string "San"
+Print all lines in the file containing the string "error"
+Print out any line that mentions "mark"
+print every #2 from #1 lines
+Print all lines that do not contain "834"
+Print the last #10 lines of a file
+Print all lines that matches "107:"
+print every line which contains the word "java"
+Print all words beginning with "C" or beginning with "E"
+Print all records after "107" on every line
+Print all lines starting with an "a" or starting with "A"
+Print only the first #5 characters
+Extract all numbers
+Print all the words enclosed in "<" and ">"
+Print the #3rd field of the file and remove the ","
+Output every symbol between "<" and ">"
+Find the first occurrence of "@" and print the next character
+Print everything after "<" and before a ","
+Print every word which starts with a ":"
+Print everything before "=" wherever it is
+Print any word that starts with "player" and is followed somewhere by "team"
+Extract the word following "from"
+Print characters between "<" and ">"
+Print words which are not in between "/*" or "*/"
+Print a line if it contains ""
+Print text after "ID: " in each line
+Print every instance of a word immediately following "RFA"
+Do not print words that end in ".aspx"
+Print words immediately preceded by "public"
+Print numbers that are immediately followed by the word "minutes"
+Only print words which end in ".jpg" and include "mine.com"
+Print words that do not contain "k"
+Print words beginning with "r"
+Print only lines that match "that's why"
+Print all words containing the letter "a"
+Only print words which include "@"
+Print words which include "article"
+Print characters between "http://" and ".com"
+Print the first #4 words in each line
+Print data between a "-" and an "*"
+Print the last number in each line
+Print lines that begin with "$result"
+Print the #5th field in each line
+Print words in the file consisting of numbers
+Print words which match "NAME"
+Print what is on each line between "&q" and the next "&"

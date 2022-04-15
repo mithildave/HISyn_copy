@@ -1,0 +1,159 @@
+########################
+# name: API name
+# type: norm(default), keyword_arg, literal, method
+# return: return type           # non-terminal
+# argument: arg1a, arg1b | arg2a | arg3a, arg3b   # non-terminal
+# method: method_name           # non-terminal, for OOL syntax methods
+# description: description of API function  # text, NL
+########################
+
+name: LinearRegression
+type:
+return: linear_regression
+argument: fit_intercept, normalize, copy_X, n_jobs, positive
+method: empty | lr_methods
+description: create a linear regression model, make a least squares model
+
+name: fit_intercept
+type: keyword_arg -> LinearRegression, set_params
+return: fit_intercept
+argument: empty | bool
+method:
+description: fit the intercept if data is not centered
+
+name: normalize
+type: keyword_arg -> LinearRegression, set_params
+return: normalize
+argument: empty | bool
+method:
+description: normalize, standardize, normalized data, standardized data, normalization, normalizing, standardization, standardizing
+
+name: copy_X
+type: keyword_arg -> LinearRegression, set_params
+return: copy_X
+argument: empty | bool
+method:
+description: duplicate x, make a copy of x
+
+name: n_jobs
+type: keyword_arg -> LinearRegression, set_params
+return: n_jobs
+argument: empty | python_int
+method:
+description: number of threads, number of jobs, parallel jobs
+
+name: positive
+type: keyword_arg -> LinearRegression, set_params
+return: positive
+argument: empty | bool
+method:
+description: force the coefficients to be positive
+
+name: fit
+class: LinearRegression
+type:
+return: lr_methods
+argument: X, y, sample_weight
+method: empty | fitted_lr_methods
+description: fit the data to a model, train the model on the data, train a linear regression
+
+name: predict
+class: LinearRegression
+type:
+return: lr_methods
+argument: X
+method:
+description: fit the data to a model, train the model on the data, train a linear regression
+
+name: True
+class:
+type: common_knowledge
+return: bool
+argument:
+method:
+description: with, true
+
+name: False
+class: LinearRegression
+type: common_knowledge
+return: bool
+argument:
+method:
+description: without, not, aren't, isn't
+
+name: X
+type: keyword_arg -> fit
+return: X
+argument:array
+method:
+description: X value of the data, Training data
+
+name: y
+type: keyword_arg -> fit
+return: y
+argument:array
+method:
+description: target values
+
+name: X
+type: keyword_arg -> predict
+return: X
+argument:array
+method:
+description: X value of the test data, testing data
+
+name: np.array
+type: norm
+return: array
+argument:python_list
+method:
+description: array, Create an array
+
+name: sample_weight
+type: keyword_arg -> fit
+return: sample_weight
+argument: array
+method:
+description: Individual weights for each sample
+
+name: get_params
+type: norm
+return: fitted_lr_methods | lr_methods
+argument:
+method:
+description: Individual weights for each sample
+
+name: get_params
+type: norm
+return: fitted_lr_methods | lr_methods
+argument:
+method:
+description: Individual weights for each sample
+
+name: set_params
+type: norm
+return: fitted_lr_methods | lr_methods
+argument: fit_intercept, normalize, copy_X, n_jobs, positive
+method:
+description: Individual weights for each sample
+
+name: Ridge
+type:
+return: ridge_regression
+argument: fit_intercept, normalize, copy_X, n_jobs, positive
+method: empty | rr_methods
+description: create a linear regression model, make a least squares model
+
+name: fit_intercept
+type: keyword_arg -> Redge, set_params
+return: fit_intercept
+argument: empty | bool
+method:
+description: fit the intercept if data is not centered in ridge regression
+
+name: set_params
+type: norm
+return: rr_methods
+argument: fit_intercept, normalize, copy_X, n_jobs, positive
+method:
+description: Individual weights for each sample

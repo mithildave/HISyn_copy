@@ -1,0 +1,159 @@
+Matches if all given matchers match.
+Matches if any of the given matchers matches.
+Matches any node.
+Matches if the provided matcher does not match.
+Matches the operator Name of operator expressions (binary or unary).
+Matches all kinds of assignment operators.
+
+Matches literals that are equal to the given value of type ValueT.
+
+
+Matches a C++ catch statement that has a catch-all handler.
+Checks that a call expression or a constructor call expression has a specific number of arguments (including absent default arguments).
+Matches a constructor call expression which uses list initialization.
+Matches a constructor call expression which requires zero initialization.
+Matches constructor declarations that are copy constructors.
+Matches constructor declarations that are default constructors.
+Matches constructors that delegate to another constructor.
+Matches constructor and conversion declarations that are marked with the explicit keyword.
+Matches constructor declarations that are move constructors.
+Matches constructor and conversion declarations that are marked with the explicit keyword.
+Matches a constructor initializer if it is initializing a base, as opposed to a member.
+Matches a constructor initializer if it is initializing a member, as opposed to a base.
+Matches a constructor initializer if it is explicitly written in code (as opposed to implicitly added by the compiler).
+Matches if the given method declaration is const.
+Matches if the given method declaration declares a copy assignment operator.
+Matches if the given method or class declaration is final.
+Matches if the given method declaration declares a move assignment operator.
+Matches if the given method declaration overrides another method.
+Matches if the given method declaration is pure.
+Matches method declarations that are user-provided.
+Matches if the given method declaration is virtual.
+Matches if the given method declaration has an explicit "virtual".
+Matches array new expressions.
+Matches overloaded operator names.
+Matches all kinds of assignment operators.
+Matches a class declaration that is defined.
+Overloaded method as shortcut for isDerivedFrom(hasName(...)).
+Matches explicit template specializations of function, class, or static member variable template instantiations.
+Matches if the given method or class declaration is final.
+Matches the generated class of lambda expressions.
+Overloaded method as shortcut for isSameOrDerivedFrom(hasName(...)).
+Matches template instantiations of function, class, or static member variable template instantiations.
+Checks that a call expression or a constructor call expression has a specific number of arguments (including absent default arguments).
+Matches casts that has a given cast kind.
+
+Matches literals that are equal to the given value of type ValueT.
+
+
+Matches if the number of template arguments equals N.
+Checks that a compound statement contains a specific number of child statements.
+Matches nodes that have the specified size.
+Matches declaration statements that contain a specific number of declarations.
+Matches if a node equals a previously bound node.
+Matches if a node equals another node.
+Matches declaration that has a given attribute.
+Matches AST nodes that were expanded within files whose name is partially matching a given regex.
+Matches AST nodes that were expanded within the main-file.
+Matches AST nodes that were expanded within system-header-files.
+Matches a declaration that has been implicitly added by the compiler (eg. implicit defaultcopy constructors).
+Matches private C++ declarations.
+Matches protected C++ declarations.
+Matches public C++ declarations.
+Matches designated initializer expressions that contain a specific number of designators.
+Matches C++11 scoped enum declaration.
+Matches non-static data members that are bit-fields of the specified bit width.
+Matches non-static data members that are bit-fields.
+Matches literals that are equal to the given value of type ValueT.
+
+Matches functions that have a dynamic exception specification.
+Matches overloaded operator names.
+Matches a function declared with a trailing return type.
+Matches constexpr variable and function declarations,        and if constexpr.
+Matches defaulted function declarations.
+Matches if a declaration has a body attached.
+Matches deleted function declarations.
+Matches explicit template specializations of function, class, or static member variable template instantiations.
+Matches extern "C" function or variable declarations.
+Matches function and namespace declarations that are marked with the inline keyword.
+Determines whether the function is "main", which is the entry point into an executable program.
+Matches FunctionDecls that have a noreturn attribute.
+Matches functions that have a non-throwing exception specification.
+Matches variablefunction declarations that have "static" storage class specifier ("static" keyword) written in the source.
+Matches template instantiations of function, class, or static member variable template instantiations.
+Matches if a function declaration is variadic.
+Matches FunctionDecls and FunctionProtoTypes that have a specific parameter count.
+Matches functions that have a dynamic exception specification.
+Matches functions that have a non-throwing exception specification.
+Matches FunctionDecls and FunctionProtoTypes that have a specific parameter count.
+Matches constexpr variable and function declarations,        and if constexpr.
+
+Matches literals that are equal to the given value of type ValueT.
+
+
+Matches member expressions that are called with '-&gt;' as opposed to '.'.
+Matches a declaration that has external formal linkage.
+Matches NamedDecl nodes that have the specified name.
+Matches NamedDecl nodes whose fully qualified names contain a substring matched by the given RegExp.
+Matches anonymous namespace declarations.
+Matches function and namespace declarations that are marked with the inline keyword.
+Checks that a call expression or a constructor call expression has a specific number of arguments (including absent default arguments).
+Matches when the selector is a keyword selector
+Matches when the selector is the empty selector
+Matches when BaseName == Selector.getAsString()
+Matches when the selector is a Unary Selector
+Returns true when the Objective-C message is sent to an instance.
+Matches ObjC selectors whose name contains a substring matched by the given RegExp.  matcher = objCMessageExpr(matchesSelector("loadHTMLStringmatches the outer message expr in the code below, but NOT the message  invocation for self.bodyView.     [self.bodyView loadHTMLString:html baseURL:NULL];
+Matches when the selector has the specified number of arguments
+Matches if a declaration has a body attached.
+Matches a declaration that has default arguments.
+Matches if the matched type is represented by the given string.
+Matches if a node equals a previously bound node.
+Matches QualType nodes that have local CV-qualifiers attached to the node, not hidden within a typedef.
+Matches QualType nodes that are of character type.
+Matches QualType nodes that are of any pointer type; this includes the Objective-C object pointer type, which is different despite being syntactically similar.
+Matches QualType nodes that are const-qualified, i.e., that include "top-level" const.
+Matches QualType nodes that are of integer type.
+Matches QualType nodes that are of signed integer type.
+Matches QualType nodes that are of unsigned integer type.
+Matches QualType nodes that are volatile-qualified, i.e., that include "top-level" volatile.
+Matches RecordDecl object that are spelled with "class."
+Matches RecordDecl object that are spelled with "struct."
+Matches RecordDecl object that are spelled with "union."
+Matches if a node equals a previously bound node.
+Matches if a node equals another node.
+Matches AST nodes that were expanded within files whose name is partially matching a given regex.
+Matches AST nodes that were expanded within the main-file.
+Matches AST nodes that were expanded within system-header-files.
+Matches nodes that have the specified size.
+Matches if a declaration has a body attached.
+Matches a TemplateArgument of integral type with a given value.
+Matches a TemplateArgument that is an integral value.
+Matches if the number of template arguments equals N.
+Matches AST nodes that were expanded within files whose name is partially matching a given regex.
+Matches AST nodes that were expanded within the main-file.
+Matches AST nodes that were expanded within system-header-files.
+Matches type bool.
+Matches if a node equals a previously bound node.
+Matches if a node equals another node.
+Matches any real floating-point type (float, double, long double).
+Matches type void.
+Matches unary expressions of a certain kind.
+Matches the operator Name of operator expressions (binary or unary).
+Matches a variable declaration that has automatic storage duration.
+Matches a variable declaration that does not have local storage.
+Matches a variable declaration that has function scope and is a non-static local variable.
+Matches a variable declaration that has static storage duration. It includes the variable declared at namespace scope and those declared with "static" and "extern" storage class specifiers.
+Matches a variable declaration that has thread storage duration.
+Matches constexpr variable and function declarations,        and if constexpr.
+Matches if a declaration has a body attached.
+Matches a variable declaration that is an exception variable from a C++ catch block, or an Objective-C statement.
+Matches explicit template specializations of function, class, or static member variable template instantiations.
+Matches extern "C" function or variable declarations.
+Matches variablefunction declarations that have "static" storage class specifier ("static" keyword) written in the source.
+Matches template instantiations of function, class, or static member variable template instantiations.
+Matches declarations that are template instantiations or are inside template instantiations.
+Matches expressions that resolve to a null pointer constant, such as GNU's __null, C++11's nullptr, or C's NULL macro.
+Matches NamedDecl nodes that have any of the specified names.
+Matches when at least one of the supplied string equals to the Selector.getAsString()
+Matches statements inside of a template instantiation.

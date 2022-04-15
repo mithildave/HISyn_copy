@@ -1,0 +1,86 @@
+_root	:=	_list
+	|	_array
+	|	_string
+	|	_condition
+	|   _number
+	|   _file
+
+_string	:=	string()
+            |   convertJSON_to_CSV(_convertfile)
+			|   convertCSV_to_JSON(_convertfile)
+
+_list	:=	list
+            |  GetColumnNames(_file)
+            |  GetAIModel(_modelName)
+            |  GetProject(_projectName)
+            |  GetPerson(_personName)
+            |  GetSoftware(_softwareName)
+            |  GetHardware(_hardwareName)
+
+_array	:=	array
+            |   MergeDataset(_file1,_file2)
+            |   GetColumn(_columnName,_getcolumnfile)
+            |   GetAllColumns(_file,_exception)
+            |   normalization(_columnName,_file)
+            |   encodeData(_columnName,_file)
+            |   MergeColumns(_columnName,_file)
+            |   encodeData2(_columnName,_file,_type)
+            |   RemoveColumn(_columnName,_array)
+
+_number :=  number
+            |   DotProduct(_array1,_array2)
+            |   countInstances(_columnName,_file,_groupBy)
+
+_columnName	:= columnName(_col_arg)
+
+_col_arg := _string
+            | _condition
+
+_groupBy :=  groupBy(_string)
+
+_type := type(_string)
+
+_exception := empty
+            |  exception(_string)
+
+_getcolumnfile := _file
+
+_file	:=	file(_datasetName)
+
+#         | GetDataset(_datasetName)
+
+_file1	:=	_file
+
+_file2	:=	_file
+
+_convertfile := _file
+
+_datasetName := datasetName(_dataset_arg)
+
+_dataset_arg := _string
+            | _condition
+
+_softwareName := softwareName(_condition)
+
+_projectName := projectName(_condition)
+
+_personName := personName(_condition)
+
+_modelName := modelName(_condition)
+
+_hardwareName := hardwareName(_condition)
+
+_Datafile2 := _file
+
+_array1 := _array
+
+_array2 := _array
+
+_condition := _condition_stmt, _conditions_rec
+
+_conditions_rec := empty
+            | _condition_stmt, _conditions_rec
+
+_condition_stmt :=  conditions()
+
+

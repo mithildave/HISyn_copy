@@ -1,0 +1,66 @@
+_root	:=	_list
+	|	_array
+	|	_string
+	|	_conditions
+	|   _dataset
+
+_string	:=	string()
+            |   convertJSON_to_CSV(_file)
+#			|	MergeDataset(_file1,_file2)
+			|   convertCSV_to_JSON(_file)
+
+_list	:=	list
+            |  GetColumnNames(_file)
+            |  GetDataset(_datasetName)
+            |  GetAIModel(_modelName)
+            |  GetProject(_projectName)
+            |  GetPerson(_personName)
+
+_array	:=	array
+            |   GetColumn(_columnName,_file)
+            |   GetAllColumns(_file,_exception)
+            |   normalization(_columnName,_file)
+            |   encodeData(_columnName,_file)
+            |   MergeColumns(_columnName,_file)
+            |   encodeData2(_columnName,_file,_type)
+            |   RemoveColumn(_columnName,_array)
+
+_number :=  number
+            |   DotProduct(_array1,_array2)
+            |   countInstances(_columnName,_file,_groupBy)
+
+_columnName	:= columnName(_string)
+
+_groupBy :=  groupBy(_string)
+
+_type := type(_string)
+
+_exception := empty
+            |  exception(_string)
+
+
+_file	:=	file(_string)
+
+_file1	:=	_file
+
+
+_datasetName := datasetName(_conditions)
+
+_projectName := projectName(_conditions)
+
+_modelName := modelName(_conditions)
+
+_personName := personName(_conditions)
+
+
+_Datafile2 := _file
+
+_file2	:=	_file
+
+_array1 := _array
+
+_array2 := _array
+
+
+_conditions := conditions(_string)
+

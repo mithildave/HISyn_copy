@@ -1,0 +1,149 @@
+file
+input: _datasetName
+return:
+description: get dataset, file, from dataset, dataset
+
+GetPerson
+input: _personName
+return:
+description: get person with, member
+
+GetProject
+input: _projectName
+return:
+description: get project with
+
+datasetName
+input:
+return:
+description: dataset, file, from
+
+convertJSON_to_CSV
+input: _file
+return:
+description: convert file to csv
+
+convertCSV_to_JSON
+input: _file
+return:
+description: convert file to json
+
+MergeDataset
+input: _file1,_file2
+return:
+description: merge dataset
+
+MergeColumns
+input: _columnName,_file
+return:
+description: get merge columns
+
+GetAllColumns
+input: _file,_exception
+return:
+description: get all columns, return all
+
+GetColumn
+input: _columnName,_file
+return:
+description: get column, extract data, get data
+
+DotProduct
+input: _array1,_array2
+return:
+description: multiplication, dot product, multiply
+
+exception
+input: _string
+return:
+description: without column, remove column, except ,
+
+GetColumnNames
+input: _file
+return:
+description: Get column names
+
+normalization
+input: _columnName,_file
+return:
+description: get normalization of column data
+
+encodeData
+input: _columnName,_file
+return:
+description: get encoding of column data
+
+encodeData2
+input: _columnName,_file,_type
+return:
+description: get encoding of column data with type
+
+countInstances
+input: _columnName,_file,_groupBy
+return:
+description: get count
+
+groupBy
+input: _string
+return:
+description: group by, by group
+
+columnName
+input: _string
+return:
+description: column, for column, from column
+
+string
+input:
+return:
+description: string
+
+type
+input: _string
+return:
+description: with type, by type
+
+projectName
+input: _conditions
+return:
+description: project
+
+personName
+input: _conditions
+return:
+description: person
+
+modelName
+input: _conditions
+return:
+description: model
+
+softwareName
+input: _condition, _conditions_rec
+return:
+description: software
+
+hardwareName
+input: _condition, _conditions_rec
+return:
+description: hardware
+
+GetAIModel
+input: _modelName
+return:
+description: get model
+
+GetSoftware
+input: _softwareName
+return:
+description: get software
+
+conditions
+input: _string
+return:
+description: condition
+
+GetHardware
+input: _hardwareName
+return:
+description: get hardware

@@ -1,0 +1,99 @@
+convertJSON_to_CSV
+input: _file
+return:
+description: convert file to csv
+
+convertCSV_to_JSON
+input: _file
+return:
+description: convert file to json
+
+MergeDataset
+input: _file1,_file2
+return:
+description: merge dataset
+
+MergeColumns
+input: _columnName,_file
+return:
+description: get merge columns
+
+DotProduct
+input: _array1,_array2
+return:
+description: multiplication
+
+exception
+input: _string
+return:
+description: without column, remove column, except
+
+GetColumnNames
+input: _file
+return:
+description: get column names from the file
+
+GetColumn
+input: _columnName,_file
+return:
+description: get column from the dataset, select from the dataset, column from the file
+
+GetDataset
+input: _Datafile1,_Datafile2
+return:
+description: get dataset from the dataset
+
+GetAllColumns
+input: _file,_exception
+return:
+description: get all columns from the dataset
+
+normalization
+input: _columnName,_file
+return:
+description: get normalization of column data
+
+encodeData
+input: _columnName,_file
+return:
+description: get encoding of column data
+
+encodeData2
+input: _columnName,_file,_type
+return:
+description: get encoding of column data with type
+
+countInstances
+input: _columnName,_file,_groupBy
+return:
+description: get count of column from file
+
+groupBy
+input: _string
+return:
+description: group by, by group
+
+columnName
+input: _string
+return:
+description: column, for column, from column
+
+file
+input: _dataset_arg
+return:
+description: from file, file, dataset
+
+string
+input:
+return:
+description: string
+
+type
+input: _string
+return:
+description: with type, by type
+
+dataset
+input: _string
+return:
+description: dataset, from dataset

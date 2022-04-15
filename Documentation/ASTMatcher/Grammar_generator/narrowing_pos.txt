@@ -1,0 +1,159 @@
+if matchers 
+if of matchers matches 
+node 
+if matcher 
+operator Name of operator expressions binary unary 
+kinds of assignment operators 
+
+literals equal value of type ValueT 
+
+
+C++ catch statement catch-all handler 
+Checks that call expression constructor call expression specific number of arguments absent default arguments 
+constructor call expression list initialization 
+constructor call expression initialization 
+constructor declarations copy constructors 
+constructor declarations default constructors 
+constructors constructor 
+constructor conversion declarations with explicit keyword 
+constructor declarations move constructors 
+constructor conversion declarations with explicit keyword 
+constructor initializer if base as member 
+constructor initializer if member as base 
+constructor initializer if in code as by compiler 
+if method declaration 
+if method declaration copy assignment operator 
+if method class declaration final 
+if method declaration move assignment operator 
+if method declaration overrides method 
+if method declaration pure 
+method declarations user-provided 
+if method declaration virtual 
+if method declaration explicit virtual 
+array new expressions 
+operator names 
+kinds of assignment operators 
+class declaration 
+method as shortcut for isDerivedFrom hasName 
+explicit template specializations of function class static member variable template instantiations 
+if method class declaration final 
+generated class of lambda expressions 
+method as shortcut for isSameOrDerivedFrom hasName 
+template instantiations of function class static member variable template instantiations 
+Checks that call expression constructor call expression specific number of arguments absent default arguments 
+casts cast kind 
+
+literals equal value of type ValueT 
+
+
+if number of template arguments equals N 
+Checks that compound statement specific number of child statements 
+nodes size 
+declaration statements specific number of declarations 
+if node node 
+if node node 
+declaration attribute 
+AST nodes within files name regex 
+AST nodes within main-file 
+AST nodes within system-header-files 
+declaration by compiler eg implicit defaultcopy constructors 
+private C++ declarations 
+C++ declarations 
+public C++ declarations 
+initializer expressions specific number of designators 
+C++11 declaration 
+non-static data members bit-fields of specified bit width 
+non-static data members bit-fields 
+literals equal value of type ValueT 
+
+functions dynamic exception specification 
+operator names 
+function with return type 
+constexpr variable function declarations if constexpr 
+function declarations 
+if declaration body 
+function declarations 
+explicit template specializations of function class static member variable template instantiations 
+extern C function variable declarations 
+function namespace declarations with inline keyword 
+Determines whether function main entry point into executable program 
+FunctionDecls noreturn attribute 
+functions non-throwing exception specification 
+variablefunction declarations static storage class specifier static keyword in source 
+template instantiations of function class static member variable template instantiations 
+if function declaration variadic 
+FunctionDecls FunctionProtoTypes specific parameter count 
+functions dynamic exception specification 
+functions non-throwing exception specification 
+FunctionDecls FunctionProtoTypes specific parameter count 
+constexpr variable function declarations if constexpr 
+
+literals equal value of type ValueT 
+
+
+member expressions with '- gt as 
+declaration external formal linkage 
+NamedDecl nodes name
+NamedDecl nodes substring by RegExp 
+anonymous namespace declarations 
+function namespace declarations with inline keyword 
+Checks that call expression constructor call expression specific number of arguments absent default arguments 
+selector keyword selector 
+selector empty selector 
+BaseName == Selector.getAsString 
+selector Unary Selector 
+Returns true Objective-C message instance 
+ObjC selectors name substring by RegExp = objCMessageExpr matchesSelector outer message expr in code below NOT message invocation for self.bodyView self.bodyView loadHTMLString html baseURL NULL ] 
+selector number of arguments 
+if declaration body 
+declaration default arguments 
+if matched type by string 
+if node node 
+QualType nodes local CV-qualifiers node within typedef 
+QualType nodes of character type 
+QualType nodes of pointer type Objective-C object pointer type different despite similar 
+QualType nodes const-qualified that top-level const 
+QualType nodes of integer type 
+QualType nodes of signed integer type 
+QualType nodes of unsigned integer type 
+QualType nodes volatile-qualified that top-level volatile 
+RecordDecl object with class 
+RecordDecl object with struct 
+RecordDecl object with union 
+if node node 
+if node node 
+AST nodes within files name regex 
+AST nodes within main-file 
+AST nodes within system-header-files 
+nodes size 
+if declaration body 
+TemplateArgument of integral type with value 
+TemplateArgument integral value 
+if number of template arguments equals N 
+AST nodes within files name regex 
+AST nodes within main-file 
+AST nodes within system-header-files 
+type bool 
+if node node 
+if node node 
+real floating-point type float double 
+type void 
+unary expressions of certain kind 
+operator Name of operator expressions binary unary 
+variable declaration automatic storage duration 
+variable declaration local storage 
+variable declaration scope non-static local variable 
+variable declaration static storage duration variable at namespace scope with static extern storage class specifiers 
+variable declaration storage duration 
+constexpr variable function declarations if constexpr 
+if declaration body 
+variable declaration exception variable from C++ catch block Objective-C statement 
+explicit template specializations of function class static member variable template instantiations 
+extern C function variable declarations 
+variablefunction declarations static storage class specifier static keyword in source 
+template instantiations of function class static member variable template instantiations 
+declarations template instantiations inside template instantiations 
+expressions null pointer constant such as GNU __null C++11 nullptr C NULL macro 
+NamedDecl nodes of names 
+at least of supplied string equals Selector.getAsString 
+statements inside of template instantiation 

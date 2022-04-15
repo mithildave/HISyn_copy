@@ -1,0 +1,171 @@
+constructor initializers 
+C++ access specifier declarations 
+block declarations 
+C++ class template declarations 
+C++ class template specializations 
+C++ constructor declarations 
+conversion operator declarations 
+explicit C++ destructor declarations 
+method declarations 
+C++ class declarations 
+declarations 
+declarator declarations field variable function non-type template parameter declarations 
+enum constants 
+enum declarations 
+field declarations 
+friend declarations 
+function declarations
+C++ function template declarations 
+declaration of label 
+declaration of linkage specification 
+declaration of anything name 
+declaration of namespace alias 
+declaration of namespace 
+non-type template parameter declarations 
+Objective-C category declarations 
+Objective-C category definitions 
+Objective-C implementation declarations 
+Objective-C interface declarations 
+Objective-C instance variable declarations 
+Objective-C method declarations 
+Objective-C property declarations 
+Objective-C protocol declarations 
+variable declarations 
+class struct union declarations 
+C++ static_assert declaration 
+template type parameter declarations 
+top declaration context 
+type alias declarations 
+type alias template declarations 
+typedef declarations 
+typedef name declarations 
+unresolved value declarations typename 
+unresolved value declarations 
+declarations 
+namespace declarations 
+value declaration 
+variable declarations 
+Same as nestedNameSpecifier matches NestedNameSpecifierLoc 
+name specifiers 
+QualTypes in clang AST 
+address of label statements GNU extension 
+array subscript expressions 
+asm statements 
+atomic builtins Example matches ptr void foo int *ptr __atomic_load_n ptr 
+Objective-C autorelease pool statement 
+binary conditional operator expressions GNU extension 
+binary operator expressions 
+break statements 
+C-style cast expression 
+call expressions 
+case statements inside switch statements 
+cast nodes of Clang AST 
+character literals wchar_t 
+compound i.e non-scalar literals 
+compound statements 
+conditional operator expressions 
+continue statements 
+CUDA kernel call expression 
+nodes temporaries 
+bool literals 
+catch statements 
+const_cast expression 
+constructor call expressions implicit ones 
+value of default argument at call site 
+delete expressions 
+member expressions actual member because base expression member name dependent 
+dynamic_cast expression 
+range-based for statements 
+functional cast expressions 
+member call expressions 
+new expressions 
+nullptr literal 
+operator calls 
+reinterpret_cast expression 
+C++ static_cast expression 
+C++ initializer list expressions 
+functional cast expressions N arguments 
+implicit expressions 
+throw expressions 
+try statements 
+unresolved constructor call expressions 
+expressions declarations 
+declaration statements 
+default statements inside switch statements 
+C99 initializer expressions C99 ] 
+do statements 
+explicit cast expressions 
+expressions 
+expressions that cleanups at end of sub-expression evaluation 
+float literals of sizes encodings e.g 
+for statements
+GNU __null expression 
+goto statements 
+if statements 
+implicit cast nodes of Clang AST 
+implicit initializers of init list expressions 
+init list expressions 
+integer literals of sizes encodings e.g 
+label statements 
+lambda expressions 
+nodes temporaries 
+member expressions 
+null statements 
+Objective-C @ catch statements 
+Objective-C @ statements 
+reference ObjCIvar 
+ObjectiveC Message invocation expressions 
+Objective-C statements 
+Objective-C @ try statements 
+opaque value expressions as helpers expressions in BinaryConditionalOperators for example 
+parentheses in expressions 
+paren list expressions ParenListExprs type for late parsing In final AST in template declarations 
+identifier expressions C99 ] 
+return statements 
+statements 
+statement expression GNU extension 
+literals wide string literals 
+substitutions of non-type template parameters 
+case default statements inside switch statements 
+switch statements 
+sizeof C99 C++11 vec_step OpenCL 
+unary operator expressions 
+reference name during specific declaration 
+unresolved member expressions 
+literal operator call 
+while statements 
+template arguments 
+template name 
+TypeLocs in clang AST 
+kinds of arrays 
+atomic types 
+types nodes C++11 auto types 
+block pointer types i.e types as void ^ int 
+builtin Types 
+C99 complex types 
+C arrays with constant size 
+decayed type Example matches ] in declaration of f. hasType decayedType hasDecayedType pointerType Example matches ] expr hasType decayedType hasDecayedType pointerType void f int i [ ] i ] = 
+types nodes C++11 decltype lt gt types 
+C++ arrays size value-dependent expression 
+types with elaborated type keyword with qualified name 
+enum types 
+FunctionProtoType nodes 
+FunctionType nodes 
+C arrays with unspecified size 
+injected class name types 
+lvalue reference types 
+member pointer types int i :* ptr :i :* ptr 
+Objective-C object pointer type different from pointer type despite similar 
+ParenType nodes 
+pointer types Objective-C object pointer types 
+rvalue reference types 
+record types e.g structs classes 
+lvalue rvalue reference types 
+types result of type for template type parameter 
+tag types record types 
+template specialization types 
+template type parameter types 
+Types in clang AST 
+typedef types 
+types nodes unary type transformations 
+C arrays with specified size integer-constant-expression 

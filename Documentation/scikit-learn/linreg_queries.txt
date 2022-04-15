@@ -1,0 +1,9 @@
+set the normalize parameter to true for the linear regression::set_params(normalize)
+Make a linear regression with normalized data, 2 jobs, and fitting the intercept::LinearRegression(fit_intercept_key_(True_()), normalize_key_(True_()), n_jobs_key_(2))
+train a model::fit(X_key_(np.array()), y_key_(np.array()))
+train a linear regression::fit(X_key_(np.array()), y_key_(np.array()))
+score the model with sample weights::score(X_key_(np.array()), y_key_(np.array()), _sample_weight_key_(np.array()))
+get parameters for the model::get_params()
+set the model parameters to normalize the data::
+train a model::fit(X_key_(np.array()), y_key_(np.array()))
+

@@ -1,0 +1,32 @@
+query	:= command
+
+command	:= 	_LinearRegression
+
+_LinearRegression	:=	LinearRegression(_fit_intercept, _normalize, _copy_X, _n_jobs, _positive)
+
+_copy_X	:= empty
+		| copy_X(_bool)
+
+_fit_intercept	:=	empty
+				|	fit_intercept(_bool)
+
+_float	:= float(python_float)
+
+_normalize	:=	empty
+			|	normalize(_bool)
+
+_bool	:=	True()
+		|	False()
+
+# True by default
+#_bool_value	:=	_True
+#			|	_False
+
+# _True	:=	True()
+
+# _False	:=	False()
+
+_n_jobs	:= 	empty
+		|	n_jobs(_integer)
+
+_integer :=	int(python_int)

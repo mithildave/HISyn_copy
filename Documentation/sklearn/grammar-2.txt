@@ -1,0 +1,37 @@
+# todo: figure out the meaning of _imp
+
+query			:=	object
+
+object 			:=	LinearRegression(fit_intercept, normalize, copy_X, n_jobs, positive).lr_methods
+
+fit_intercept  	:= 	Fit_intercept_imp(fit_intercept_arg)
+
+fit_inercept_arg := bool_t
+
+normalize   := bool_f
+
+copy_X      := bool_t
+
+n_jobs      := _Num
+
+positive    := bool_f
+
+bool_t      :=  _True
+            |   _False
+
+bool_f      :=  _False
+            |   _True
+
+lr_methods      :=  fit(X, y, sample_weight)
+                |   get_params(deep)
+                |   predict(X)
+                |   score(X, y, sample_weight)
+                |   set_params(params)
+
+X	:= 	_array
+
+y	:= 	_array
+
+sample_weight   :=  None
+                |   _array
+

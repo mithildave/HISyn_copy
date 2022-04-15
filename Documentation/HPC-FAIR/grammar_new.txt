@@ -1,0 +1,58 @@
+_root	:=	_list
+	|	_string
+	|   _number
+	|   _dataset
+	|   _model
+	|   _machine
+
+
+_list := list
+     |  GetDataset(_dataset)
+     |  GetAIModel(_model)
+     |  GetMachine(_machine)
+
+_dataset := DatasetName(_datasetName,_datasetID,_projectName,_fundedBy,_subject)
+
+_model := AImodelName(_targetMachine, _modelType, _learningType,_version)
+
+_machine := Machine(_machineName,_systemArchitecture)
+
+_datasetName := empty
+        |   dataset_name(_string)
+
+_datasetID := empty
+        |   dataset_id(_number)
+
+_projectName := empty
+        |   project_name(_string)
+
+_fundedBy := empty
+        |   funded_by(_string)
+
+_subject := empty
+        |   subject(_string)
+
+_targetMachine: = empty
+        |   target_machine(_string)
+
+_modelType := empty
+        |   model_type(_string)
+
+_learningType := empty
+        |  learning_type(_string)
+
+_version  := empty
+        |  version(_string)
+
+_machineName := empty
+        |  machine_name(_string)
+
+_systemArchitecture :=  empty
+        | system_architecture(_string)
+
+_string	:=	string()
+
+_number :=  number
+
+
+

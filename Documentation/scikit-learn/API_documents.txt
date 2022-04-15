@@ -1,0 +1,255 @@
+########################
+# name: API name
+# type: norm(default), keyword_arg, common_knowledge
+# return: return type           # non-terminal
+# argument: arg1a, arg1b | arg2a | arg3a, arg3b   # non-terminal
+# method: method_name           # non-terminal, for OOL syntax methods
+# description: description of API function  # text, NL
+########################
+
+name: LinearRegression
+type:
+return: linear_regression
+argument: fit_intercept, normalize, copy_X, n_jobs, positive
+method: empty | lr_methods
+description: Ordinary least squares Linear Regression, LinearRegression fits a linear model with coefficients w = (w1, …, wp) to minimize the residual sum of squares between the observed targets in the dataset, and the targets predicted by the linear approximation, create a linear regression model, make a least squares model
+
+name: Ridge
+type:
+return: ridge_regression
+argument: fit_intercept, normalize, copy_X, alpha, max_iter, tol, solver, random_state
+method: empty | lr_methods
+description: Linear least squares with l2 regularization, Minimizes the objective function, This model solves a regression model where the loss function is the linear least squares function and regularization is given by the l2-norm. Also known as Ridge Regression or Tikhonov regularization
+
+name: RidgeCV
+type:
+return: ridge_regression
+argument: fit_intercept, normalize, copy_X, alphas, cv, gcv_mode, store_cv_values, alpha_per_target
+method: empty | lr_methods
+description: Linear least squares with l2 regularization, Minimizes the objective function, This model solves a regression model where the loss function is the linear least squares function and regularization is given by the l2-norm. Also known as Ridge Regression or Tikhonov regularization
+
+name: cv
+type: keyword_arg
+return: cv
+argument: empty | python_int
+method:
+description: Determines the cross-validation splitting strategy, number of folds
+
+name: gcv_mode
+type: keyword_arg
+return: gcv_mode
+argument: empty | gcv_modes
+method:
+description: Flag indicating which strategy to use when performing Leave-One-Out Cross-Validation
+
+name: 'eigen'
+type: common_knowledge
+return: gcv_modes
+argument: 
+method:
+description: force computation via eigendecomposition
+
+name: 'auto'
+type: common_knowledge
+return: gcv_modes | ridge_solver
+argument: 
+method:
+description: automatically determine strategy
+
+name: alphas
+type: keyword_arg
+return: alphas
+argument: empty | array_like | python_var
+method:
+description: Array of alpha values to try. Regularization strength; must be a positive float. Regularization improves the conditioning of the problem and reduces the variance of the estimates
+
+name: alpha
+type: keyword_arg
+return: alpha
+argument: empty | python_float
+method:
+description: Regularization strength must be a positive float
+
+name: random_state
+type: keyword_arg
+return: random_state
+argument: empty | python_int
+method:
+description: starting random state for SAG
+
+name: solver
+type: keyword_arg
+return: solver | python_var
+argument: empty | ridge_solver
+method:
+description: Solver to use in the computational routines
+
+name: 'svd'
+type: common_knowledge
+return: gcv_modes | ridge_solver
+argument: 
+method:
+description: uses a Singular Value Decomposition of X to compute the Ridge coefficients, svd
+
+name: 'cholesky'
+type: common_knowledge
+return: ridge_solver
+argument: 
+method:
+description: cholesky uses the standard scipy.linalg.solve function to obtain a closed-form solution
+
+name: 'sparse_cg'
+type: common_knowledge
+return: ridge_solver
+argument: 
+method:
+description: ‘sparse_cg’ uses the conjugate gradient solver as found in scipy.sparse.linalg.cg. As an iterative algorithm, possibility to set tol and max_iter
+
+name: 'lsqr'
+type: common_knowledge
+return: ridge_solver
+argument: 
+method:
+description: uses the dedicated regularized least-squares routine scipy.sparse.linalg.lsqr. It is the fastest and uses an iterative procedure.
+
+name: 'sag'
+type: common_knowledge
+return: 'svd'
+argument: 
+method:
+description: uses a Stochastic Average Gradient descent, and ‘saga’ uses its improved, unbiased version named SAGA. Both methods also use an iterative procedure, and are often faster than other solvers when both n_samples and n_features are large.
+
+name: alpha
+type: keyword_arg
+return: alpha
+argument: empty | python_float  | python_var
+method:
+description: Regularization strength must be a positive float
+
+name: max_iter
+type: keyword_arg
+return: max_iter
+argument: empty | python_int
+method:
+description: Maximum number of iterations for conjugate gradient solver
+
+tol
+type: keyword_arg
+return: tol
+argument: empty | python_float
+method:
+description: Precision of the solution
+
+name: fit_intercept
+type: keyword_arg
+return: fit_intercept
+argument: empty | bool
+method:
+description: Whether to calculate the intercept for this model. If set to False, no intercept will be used in calculations (i.e. data is expected to be centered), fit the intercept if data is not centered
+
+name: get_params
+type: norm
+return: lr_methods | fitted_lr_methods
+argument:
+method:
+description: Get parameters for this estimator
+
+
+name: set_params
+type: norm
+return: lr_methods
+argument: fit_intercept, normalize, copy_X, n_jobs, positive
+method:
+description: Set the parameters of this estimator, Set the parameters of this regression, Set the parameters of this model
+
+name: score
+type: norm
+return: fitted_lr_methods
+argument: X, y, sample_weight
+method:
+description: Return the coefficient of determination  of the prediction, evaluate the model, score the model, test the model
+
+name: predict
+type: norm
+return: fitted_lr_methods
+argument: X
+method:
+description: Predict using the model
+
+name: normalize
+type: keyword_arg
+return: normalize
+argument: empty | bool
+method:
+description: normalize, standardize, normalized data, standardized data, normalization, normalizing, standardization, standardizing, This parameter is ignored when fit_intercept is set to False. If True, the regressors X will be normalized before regression by subtracting the mean and dividing by the l2-norm. If you wish to standardize, please use StandardScaler before calling fit on an estimator with normalize=False.
+
+name: copy_X
+type: keyword_arg
+return: copy_X
+argument: empty | bool 
+method:
+description: duplicate x, make a copy of x, If True, X will be copied; else, it may be overwritten.
+
+name: n_jobs
+type: keyword_arg
+return: n_jobs
+argument: empty | python_int | python_var
+method:
+description: number of threads, number of jobs, parallel jobs, The number of jobs to use for the computation. This will only provide speedup for n_targets > 1 and sufficient large problems. None means 1 unless in a joblib.parallel_backend context. -1 means using all processors. See Glossary for more details.
+
+name: positive
+type: keyword_arg
+return: positive
+argument: empty | bool
+method:
+description: force the coefficients to be positive, When set to True, forces the coefficients to be positive. This option is only supported for dense arrays.
+
+name: fit
+type:
+return: lr_methods
+argument: X, y, sample_weight
+method: empty | fitted_lr_methods
+description: fit the data to a model, train the model on the data, train a linear regression, Fit linear model
+
+name: True
+type: common_knowledge
+return: bool
+argument:
+method:
+description: with, true
+
+name: False
+type: common_knowledge
+return: bool
+argument:
+method:
+description: without, not, aren't, isn't
+
+name: X
+type: keyword_arg
+return: X
+argument: array_like | python_var
+method:
+description: X value of the data, Training data
+
+name: y
+type: keyword_arg
+return: y
+argument: array_like | python_var
+method:
+description: target values
+
+name: np.array
+type: norm
+return: array_like
+argument:python_list
+method:
+description: array, Create an array
+
+name: sample_weight
+type: keyword_arg
+return: sample_weight
+argument: array | python_var
+method:
+description: Individual weights for each sample
+

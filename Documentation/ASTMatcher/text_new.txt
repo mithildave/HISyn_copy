@@ -1,0 +1,100 @@
+find all the functions that use a particular global variable named PI
+find forstatements whose initialization portion declares a single variable which is initialized to the integer 0
+find all call expressions that use a function named PI
+find field declarations whose type is typedef
+find a reference to a pointer named pi
+find all cxx call expressions which call the cxx method named PI
+find all cxx call expressions of the cxx method named PI
+find forstatements whose condition is less than 10. (special, less than = binaryOperator((hasOperatorName('<')), hasRHS(integerLitteral(equals(10))))
+find call expressions which call the function named PI
+find call expressions which call the function whose name is PI
+find all call expressions of a function whose name is PI
+find all binary operators named *
+find all binary operators whose name is *
+find ifstatements whose condition is smaller than 5
+find call expressions whose argument is a float literal
+find call expressions which has a float argument
+find call expressions whose argument is a cstyle cast expression with destination type which is real floating point
+find all namespace declarations that are expaned in system header
+find ifstatements whose then statement is a nullstatement
+find all cxx constructor expressions which declare a cxx method whose name is PI
+find integer 0
+find binary operators, whose left side is an expression, and right side is an integer 0
+find implicit casts whose destination type is integer.
+find binary operators whose left side is an expression whose type is integer
+find continuestatements whose ancestor is forstatement
+find namespace declarations whose name is PI
+find forstatements whose increment portion is an expression whose type is floating.
+find variables that has thread storage duration
+find the cxx constcast expressions
+find member expressions that have object expression whose type is a recorddecl that spelled with union
+find a cxx construct expression that declares a cxx constructor which is a copy constructor
+find parameters that has default arguments
+find all anonymous namespaces
+find variables whose type is pointer type where the pointee is parentype whose inner type is function type
+find cxx constructs whose type is qual type that is a recordDecl named ‘auto_ptr’
+find forstatements whose increment is an unary operator named *
+find ifstatements that has an elsestatement
+find array subscripts whose left side's type is integer
+find variables that is initialized with anything
+find the unary operator named *
+find ifstatements which are expanded within the main-file
+find the implicit cast whose destination type is Boolean
+find members that declare a variable which has static storage
+find function declarations that have a body
+find cxx constructs which declares a cxx method whose name is PI
+find namespaces that are expanded in the system header
+find the functions that have overloaded operator named *
+find call expressions that call a variadic function
+find expressions whose types are any real floating-point type
+find the implicit casts whose source expressions are expressions whose types are any real floating-point type.
+find functions that use a global variable whose name is pi
+find fortatements within which the initialization portion has a single variable decarled and initialized to integer literal 0.
+find call expressions that has a function named pi in it
+find field declarations of which the type is typedef
+find references to the pointer named pi
+find cxx call expressions that call a cxx method pi
+find all cxx call expressions whose callee is a cxx method named PI
+find forstatements with condition that is smaller than 10.
+find call expressions which calls the function named pi
+find call expressions that calls the function with the name pi
+find call expressions which has called the function pi
+find binary operators with a name *.
+Find all binary operators that has been named *.
+find an ifstatement with condition smaller than 5.
+find call expressions that has float literal argument.
+find call expressions whose argument is a float literal
+find call expressions whose argument is a cstyle cast expression that has a float type as destination
+find namespace declarations which are expansion in system header
+find an ifstatement where the then statement is a nullstatement
+find cxx construct expressions that declare a cxx method pi
+find an integer whose value is 0
+find an binary operator with an expression on the left side and an integer 0 on right side
+find implicit cast expressions of which the destination type is integer
+find a binary operator where the left side is an expression whose type is integer
+find a continue statement that a for statement is its ancestor
+find namespace declarations with the name pi
+find a forstatement of which the increment portion is the floating type expression
+find a variable declaration which has thread storage duration
+find a cxx const cast expression
+find member expressions whose object expression's type is record delaration which is spelled with a union.
+find cxx construct expressions having a cxx constructor declaration as copy constructor.
+find parameters with default arguments.
+find an anonymous namespace
+find pointer type variables where the pointer is parentype having inner type as function type.
+find cxx constructs having type as qualified types that is a record declaration named pi.
+find a forstatement having a unary operator as increment with name *.
+find an ifstatement having corresponding else statement.
+find array subscripts having left side type as an integer.
+Find variables that are initialized to anything
+find an unary operator having name as *
+find an ifstatement that is expanded within the main-file.
+find a implicit cast having destination type as Boolean.
+find members that declares a var having static storage.
+find function declarations having a body.
+find cxx construct expressions declaring a cxx method having name as pi
+find namespace declarations that is expansions in a system header.
+find functions whose overloaded operator name is *
+find function calls who use variadic functions as the arguments.
+find expressions that are floating-point type
+find implicit cast expressions that use floating-point type expression as the source expression.

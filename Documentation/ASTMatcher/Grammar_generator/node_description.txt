@@ -1,0 +1,171 @@
+Matches constructor initializers.
+Matches C++ access specifier declarations.
+Matches block declarations.
+Matches C++ class template declarations.
+Matches C++ class template specializations.
+Matches C++ constructor declarations.
+Matches conversion operator declarations.
+Matches explicit C++ destructor declarations.
+Matches method declarations.
+Matches C++ class declarations.
+Matches declarations.
+Matches declarator declarations (field, variable, function and non-type template parameter declarations).
+Matches enum constants.
+Matches enum declarations.
+Matches field declarations.
+Matches friend declarations.
+Matches function declarations.
+Matches C++ function template declarations.
+Matches a declaration of label.
+Matches a declaration of a linkage specification.
+Matches a declaration of anything that could have a name.
+Matches a declaration of a namespace alias.
+Matches a declaration of a namespace.
+Matches non-type template parameter declarations.
+Matches Objective-C category declarations.
+Matches Objective-C category definitions.
+Matches Objective-C implementation declarations.
+Matches Objective-C interface declarations.
+Matches Objective-C instance variable declarations.
+Matches Objective-C method declarations.
+Matches Objective-C property declarations.
+Matches Objective-C protocol declarations.
+Matches parameter variable declarations.
+Matches class, struct, and union declarations.
+Matches a C++ static_assert declaration.
+Matches template type parameter declarations.
+Matches the top declaration context.
+Matches type alias declarations.
+Matches type alias template declarations.
+Matches typedef declarations.
+Matches typedef name declarations.
+Matches unresolved using value declarations that involve the typename.
+Matches unresolved using value declarations.
+Matches using declarations.
+Matches using namespace declarations.
+Matches any value declaration.
+Matches variable declarations.
+Same as nestedNameSpecifier but matches NestedNameSpecifierLoc.
+Matches nested name specifiers.
+Matches QualTypes in the clang AST.
+Matches address of label statements (GNU extension).
+Matches array subscript expressions.
+Matches asm statements.
+Matches atomic builtins. Example matches __atomic_load_n(ptr, 1)   void foo() { int *ptr; __atomic_load_n(ptr, 1); }
+Matches an Objective-C autorelease pool statement.
+Matches binary conditional operator expressions (GNU extension).
+Matches binary operator expressions.
+Matches break statements.
+Matches a C-style cast expression.
+Matches call expressions.
+Matches case statements inside switch statements.
+Matches any cast nodes of Clang's AST.
+Matches character literals (also matches wchar_t).
+Matches compound (i.e. non-scalar) literals
+Matches compound statements.
+Matches conditional operator expressions.
+Matches continue statements.
+Matches CUDA kernel call expression.
+Matches nodes where temporaries are created.
+Matches bool literals.
+Matches catch statements.
+Matches a const_cast expression.
+Matches constructor call expressions (including implicit ones).
+Matches the value of a default argument at the call site.
+Matches delete expressions.
+Matches member expressions where the actual member referenced could not be resolved because the base expression or the member name was dependent.
+Matches a dynamic_cast expression.
+Matches range-based for statements.
+Matches functional cast expressions
+Matches member call expressions.
+Matches new expressions.
+Matches nullptr literal.
+Matches overloaded operator calls.
+Matches a reinterpret_cast expression.
+Matches a C++ static_cast expression.
+Matches C++ initializer list expressions.
+Matches functional cast expressions having N != 1 arguments
+Matches implicit and explicit this expressions.
+Matches throw expressions.
+Matches try statements.
+Matches unresolved constructor call expressions.
+Matches expressions that refer to declarations.
+Matches declaration statements.
+Matches default statements inside switch statements.
+Matches C99 designated initializer expressions [C99 6.7.8].
+Matches do statements.
+Matches explicit cast expressions.
+Matches expressions.
+Matches expressions that introduce cleanups to be run at the end of the sub-expression's evaluation.
+Matches float literals of all sizes encodings, e.g. 1.0, 1.0f, 1.0L and 1e10.
+Matches for statements.
+Matches GNU __null expression.
+Matches goto statements.
+Matches if statements.
+Matches the implicit cast nodes of Clang's AST.
+Matches implicit initializers of init list expressions.
+Matches init list expressions.
+Matches integer literals of all sizes encodings.
+Matches label statements.
+Matches lambda expressions.
+Matches nodes where temporaries are materialized.
+Matches member expressions.
+Matches null statements.
+Matches Objective-C @catch statements.
+Matches Objective-C @finally statements.
+Matches a reference to an ObjCIvar.
+Matches ObjectiveC Message invocation expressions.
+Matches Objective-C statements.
+Matches Objective-C @try statements.
+Matches opaque value expressions. They are used as helpers to reference another expressions and can be met in BinaryConditionalOperators, for example.
+Matches parentheses used in expressions.
+Matches paren list expressions. ParenListExprs don't have a predefined type and are used for late parsing. In the final AST, they can be met in template declarations.
+Matches predefined identifier expressions [C99 6.4.2.2].
+Matches return statements.
+Matches statements.
+Matches statement expression (GNU extension).
+Matches string literals (also matches wide string literals).
+Matches substitutions of non-type template parameters.
+Matches case and default statements inside switch statements.
+Matches switch statements.
+Matches sizeof (C99), alignof (C++11) and vec_step (OpenCL)
+Matches unary operator expressions.
+Matches reference to a name that can be looked up during parsing but could not be resolved to a specific declaration.
+Matches unresolved member expressions.
+Matches user defined literal operator call.
+Matches while statements.
+Matches template arguments.
+Matches template name.
+Matches TypeLocs in the clang AST.
+Matches all kinds of arrays.
+Matches atomic types.
+Matches types nodes representing C++11 auto types.
+Matches block pointer types, i.e. types syntactically represented as "void (^)(int)".
+Matches builtin Types.
+Matches C99 complex types.
+Matches C arrays with a specified constant size.
+Matches decayed type Example matches i[] in declaration of f.     (matcher = valueDecl(hasType(decayedType(hasDecayedType(pointerType()))))) Example matches i[1].     (matcher = expr(hasType(decayedType(hasDecayedType(pointerType())))))   void f(int i[]) {     i[1] = 0;   }
+Matches types nodes representing C++11 decltype(&lt;expr&gt;) types.
+Matches C++ arrays whose size is a value-dependent expression.
+Matches types specified with an elaborated type keyword or with a qualified name.
+Matches enum types.
+Matches FunctionProtoType nodes.
+Matches FunctionType nodes.
+Matches C arrays with unspecified size.
+Matches injected class name types.
+Matches lvalue reference types.
+Matches member pointer types. Given   struct A { int i; }   A::* ptr = A::i; memberPointerType()   matches "A::* ptr"
+Matches an Objective-C object pointer type, which is different from a pointer type, despite being syntactically similar.
+Matches ParenType nodes.
+Matches pointer types, but does not match Objective-C object pointer types.
+Matches rvalue reference types.
+Matches record types (e.g. structs, classes).
+Matches both lvalue and rvalue reference types.
+Matches types that represent the result of substituting a type for a template type parameter.
+Matches tag types (record and enum types).
+Matches template specialization types.
+Matches template type parameter types.
+Matches Types in the clang AST.
+Matches typedef types.
+Matches types nodes representing unary type transformations.
+Matches C arrays with a specified size that is not an integer-constant-expression.

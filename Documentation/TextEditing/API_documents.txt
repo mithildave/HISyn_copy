@@ -1,0 +1,259 @@
+AFTER
+input: 
+return: 
+description: refers to after a string or token, succeeding, following,
+
+AFTERCOND
+input: 
+return: 
+description: refers to after the given condition or input string, succeeding, following
+
+ALL
+input: 
+return: 
+description: refers to all, whole, every one of the, each single one
+
+ALLBUT
+input: 
+return: 
+description: all the text except given, every one apart from, each single one besides
+
+ALWAYS
+input: 
+return: 
+description: always, at all times
+
+AND
+input: 
+return: 
+description: and, join, as well as, together, along with
+
+BConditionOccurrence
+input: 
+return: 
+description: with a condition so that, with a requirement, with a provision
+
+BEFORE
+input: 
+return: 
+description: refers to before the given token, refers to in-front of the given token, preceding
+
+BEFORECOND
+input: 
+return: 
+description: refers to before the given condition, preceding the given condition
+
+BETWEEN
+input: 
+return: 
+description: in between given tokens
+
+BETWEENCOND
+input: 
+return: 
+description: between given tokens, inside given tokens, enclose given tokens
+
+BLANKLINETOKEN
+input: 
+return: 
+description: refers to blank lines, empty lines, blank line, no text, empty line, blankline.
+
+BY
+input: 
+return: 
+description: refer by, something in place of the other,  with, the substitution info.
+
+CHARTOKEN
+input: 
+return: 
+description: refers to a character, letter, symbol, char, number, alphabet.
+
+CONCATENATE
+input: 
+return: 
+description: refers to attach tokens, CONCATENATE two things, join tokens
+
+CONTAINS
+input: 
+return: 
+description: contains, present, contain, occur, embedded, substring, have, including, consist, include, mention
+
+DIGITTOKEN
+input: 
+return: 
+description: refers to a digit, number or numeral
+
+END
+input: 
+return: 
+description: end of, the last part of, at the furthest point of
+
+ENDSWITH
+input: 
+return: 
+description: find the text end with given input, find the text with the last part given as input
+
+EVERY
+input: 
+return: 
+description: refers to all tokens, every
+
+FIRSTFEW
+input: 
+return: 
+description: refers to first few occurrences, earliest few, few from the starting
+
+FIRSTONE
+input: 
+return: 
+description: refers to the first one, initial one, at the beginning, at start
+
+IMM
+input: 
+return: 
+description: refers to the a token immediate, immediately, instantly, exactly at
+
+INSERT
+input: 
+return: 
+description: insert, add, put, enter, attach, prepend, append
+
+INTEGER
+input: ck_integer
+return: 
+description: integer
+
+IntegerSet
+input: 
+return: 
+description: refers to an integer, number
+
+IterationScope
+input: 
+return: 
+description: refers to scope of the action, iteration scope,
+
+LASTFEW
+input: 
+return: 
+description: refers to last few occurrences, latter few, few from the end
+
+LASTONE
+input: 
+return: 
+description: last one, final one, one at the end
+
+LINE
+input: 
+return: 
+description: line, textline, line in the text
+
+LINESCOPE
+input: 
+return: 
+description: line scope, sentence, string, text, statement
+
+LINETOKEN
+input: 
+return: 
+description: line, string, sentence, record
+
+MATCHES
+input: 
+return: 
+description: it matches with, match, like, equivalent to
+
+NONBLANKLINETOKEN
+input: 
+return: 
+description: matches with none blank line, nonblankline, matches with line with text
+
+NOT
+input: 
+return: 
+description: not, unless, no
+
+NUMBERTOKEN
+input: 
+return: 
+description: number, integer, numeral, numeric letter, numeric characters, digit, numeric part, numeric value
+
+OR
+input: 
+return: 
+description: refers to or, alternate choice.
+
+PRINT
+input: 
+return: 
+description: print, output, extract, list, search
+
+Position
+input: 
+return: 
+description: refers to a position, place in the sentence.
+
+REMOVE
+input: 
+return: 
+description: remove, drop, eliminate, delete, reject, ignore
+
+REPLACE
+input: 
+return: 
+description: replace, change, convert, substitute
+
+SEQ
+input: 
+return: 
+description: seq, refers to sequential execution
+
+START
+input: 
+return: 
+description: start, beginning, starting, before, in_front_of, prefix, above
+
+STARTFROM
+input: 
+return: 
+description: start from, starts with, precede with.
+
+STARTSWITH
+input: 
+return: 
+description: start with, beginning, starting
+
+STRING
+input: ck_string
+return: 
+description: string
+
+SelectString
+input: 
+return: 
+description: select the string for given condition
+
+TEXTTOKEN
+input: 
+return: 
+description: refers to text, everything, content, part.
+
+WHITESPACETOKEN
+input: 
+return: 
+description: white space, whitespace.
+
+WORD
+input: 
+return: 
+description: word is an unit of a sentence.
+
+WORDSCOPE
+input: 
+return: 
+description: define the scope of the word to do action
+
+WORDTOKEN
+input: 
+return: 
+description: refer to word token, string.
