@@ -1,7 +1,7 @@
 # INPOWS
 
 INPOWS is a workflow synthesis framework that generates the workflow expressions which can be directly executed inside a Python script.
-INPOWS referes to **i**nteractive **N**LU-**p**owered **o**ntology-based **w**orkflow **s**ynthesis. INPOWS allows the use of Natural Language for queries, maximizes the robustness in handling concepts and language ambiguities through an interactive ontology-based design, and achieves superior extensibility by adopting a synthesis algorithm powered by Natural Language Understanding. When being integrated into a FAIR data management system for HPC, INPOWS shows the efficacy in enabling flexible, robust, and extensible workflow synthesis. The overall framework of INPOWS is shown in the figure: [framework.pdf](https://github.com/mithildave/HISyn_copy/files/8494151/framework.pdf)
+INPOWS referes to **I**nteractive **N**LU-**P**owered **O**ntology-based **W**orkflow **S**ynthesis. INPOWS allows the use of Natural Language for queries, maximizes the robustness in handling concepts and language ambiguities through an interactive ontology-based design, and achieves superior extensibility by adopting a synthesis algorithm powered by Natural Language Understanding. When being integrated into a FAIR data management system for HPC, INPOWS shows the efficacy in enabling flexible, robust, and extensible workflow synthesis. The overall framework of INPOWS is shown in the figure: [framework.pdf](https://github.com/mithildave/HISyn_copy/files/8494151/framework.pdf)
 
 
 ## Deployment
